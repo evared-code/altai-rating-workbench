@@ -1,0 +1,1894 @@
+{
+  "tool": "ALTAI Rating Workbench 1.2",
+  "generated": "2026-11-11T19:30:00Z",
+  "example": false,
+  "rater": {
+    "type": "AI",
+    "name": "Claude (Anthropic)",
+    "c1": "Not met: the plans were written after the AI rater had read the case evidence.",
+    "use": "Separate AI rater for comparison with the two human assessors, opened only after both have finished. Not a human rating; not study data for kappa between humans."
+  },
+  "case": "Epic Sepsis Model at Michigan Medicine (R0, outside evidence)",
+  "assessor": "AI rater (Claude)",
+  "evidenceCutoff": "2019-08-12",
+  "stakeholder": "AI customer",
+  "evidenceBase": [
+    "Wong et al. 2021, JAMA Intern Med 181(8):1065-1070 (Michigan Medicine, 6 Dec 2018 - 20 Oct 2019; 38,455 hospitalizations) - hospital's own outcome data, class O per Section 6.1",
+    "Bennett et al. 2019, arXiv:1902.07276 (UCHealth, 5 hospitals, Jun-Oct 2017; Epic co-author) - published, class D",
+    "Excluded: Epic's internal documentation (inside reference, R2 only)"
+  ],
+  "plan": {
+    "source": "ALTAI Plan Codebook (generic), Apitchaka Singjai, 2026-11-11",
+    "stakeholderCodes": "draft by Claude from codebook paraphrases; to be verified against the full ALTAI wording (rule R1)"
+  },
+  "summary": {
+    "inScope": 58,
+    "plansRegistered": 58,
+    "notApplicable": 5,
+    "toRate": 53,
+    "rated": 53,
+    "notYetRated": 0,
+    "met": 2,
+    "partlyMet": 1,
+    "notMet": 2,
+    "cannotJudge": 48,
+    "coverageR": 0.094,
+    "coverageDefinition": "(Met + Partly met + Not met) / applicable criteria for this stakeholder",
+    "c1RatedBeforeRegistration": []
+  },
+  "requirements": {
+    "toProvider": [
+      {
+        "id": "A-13",
+        "missing": "Evidence for the registered measure: Valid certificate for the deployed version."
+      },
+      {
+        "id": "A-18",
+        "missing": "Evidence for the registered measure: Risk metrics defined for this use, with levels."
+      },
+      {
+        "id": "A-19",
+        "missing": "Evidence for the registered measure: Hazards and misuse identified for this use."
+      },
+      {
+        "id": "A-20",
+        "missing": "Evidence for the registered measure: Reliability needed by this decision, stated."
+      },
+      {
+        "id": "A-24",
+        "missing": "Description of the training population (sites, case mix, sepsis definition) to compare with the hospital's patients."
+      },
+      {
+        "id": "A-36",
+        "missing": "Evidence for the registered measure: Each GDPR-type measure in place (DPIA, DPO, minimisation, rights)."
+      },
+      {
+        "id": "A-37",
+        "missing": "Evidence for the registered measure: Effects of non-personal data for this use."
+      },
+      {
+        "id": "A-38",
+        "missing": "Evidence for the registered measure: Data-management standards followed."
+      },
+      {
+        "id": "A-41",
+        "missing": "Evidence for the registered measure: Survey of AI users' understanding, with results."
+      },
+      {
+        "id": "A-44",
+        "missing": "Evidence for the registered measure: Bias-prevention procedure in use."
+      },
+      {
+        "id": "A-46",
+        "missing": "Evidence for the registered measure: Provider staff trained on bias."
+      },
+      {
+        "id": "A-51",
+        "missing": "Evidence for the registered measure: Universal Design applied, by record."
+      },
+      {
+        "id": "A-53",
+        "missing": "Evidence for the registered measure: Stakeholders who took part in design."
+      },
+      {
+        "id": "A-63",
+        "missing": "Evidence for the registered measure: Access the provider offers to an independent auditor."
+      },
+      {
+        "id": "A-64",
+        "missing": "Evidence for the registered measure: Third-party oversight in operation."
+      },
+      {
+        "id": "A-65",
+        "missing": "Evidence for the registered measure: Risk training given, including legal framework."
+      },
+      {
+        "id": "A-66",
+        "missing": "Evidence for the registered measure: Ethics board and its decisions on this system."
+      },
+      {
+        "id": "A-67",
+        "missing": "Evidence for the registered measure: Monitoring of trustworthiness and documented trade-offs."
+      }
+    ],
+    "toCustomer": [
+      {
+        "id": "A-01",
+        "missing": "Evidence for the registered measure: What users and subjects are shown about the output's AI origin."
+      },
+      {
+        "id": "A-03",
+        "missing": "Evidence for the registered measure: Share of outputs accepted without review, and overrides."
+      },
+      {
+        "id": "A-04",
+        "missing": "Evidence for the registered measure: Decisions that changed because of the system."
+      },
+      {
+        "id": "A-06",
+        "missing": "Evidence for the registered measure: Signs of attachment, addiction or manipulation among users."
+      },
+      {
+        "id": "A-08",
+        "missing": "Evidence for the registered measure: AI users trained before use, with content and date."
+      },
+      {
+        "id": "A-09",
+        "missing": "Evidence for the registered measure: Adverse effects detected and handled in a period."
+      },
+      {
+        "id": "A-10",
+        "missing": "Evidence for the registered measure: Outputs can be stopped or switched off in practice."
+      },
+      {
+        "id": "A-12",
+        "missing": "Evidence for the registered measure: Damaging failures, attacks or misuse in a period."
+      },
+      {
+        "id": "A-14",
+        "missing": "Evidence for the registered measure: Attacks tested against the deployed system."
+      },
+      {
+        "id": "A-15",
+        "missing": "Evidence for the registered measure: Security measures working in operation."
+      },
+      {
+        "id": "A-16",
+        "missing": "Evidence for the registered measure: Red-team or penetration test of the deployment."
+      },
+      {
+        "id": "A-17",
+        "missing": "Evidence for the registered measure: Support and update terms users receive."
+      },
+      {
+        "id": "A-21",
+        "missing": "Evidence for the registered measure: Fallback that takes over when the system fails."
+      },
+      {
+        "id": "A-22",
+        "missing": "Evidence for the registered measure: Changes that triggered a new review, in a period."
+      },
+      {
+        "id": "A-25",
+        "missing": "Quarterly accuracy reports to the operations committee since 11 March 2019."
+      },
+      {
+        "id": "A-26",
+        "missing": "Evidence for the registered measure: Drift or feedback effects in inputs and outcomes over time."
+      },
+      {
+        "id": "A-27",
+        "missing": "The accuracy information given to clinicians with the alerts."
+      },
+      {
+        "id": "A-30",
+        "missing": "Evidence for the registered measure: Fallback plan tested, with results."
+      },
+      {
+        "id": "A-31",
+        "missing": "Evidence for the registered measure: Low-confidence outputs flagged and handled."
+      },
+      {
+        "id": "A-39",
+        "missing": "Evidence for the registered measure: Each traceability measure available for the deployment."
+      },
+      {
+        "id": "A-40",
+        "missing": "Evidence for the registered measure: Explanations users receive with outputs."
+      },
+      {
+        "id": "A-43",
+        "missing": "Evidence for the registered measure: Purpose, limits, error rates and training users receive."
+      },
+      {
+        "id": "A-49",
+        "missing": "Evidence for the registered measure: Groups excluded by the design."
+      },
+      {
+        "id": "A-50",
+        "missing": "Evidence for the registered measure: Accessibility of what users receive."
+      },
+      {
+        "id": "A-56",
+        "missing": "Evidence for the registered measure: Changes in work arrangements after introduction."
+      },
+      {
+        "id": "A-57",
+        "missing": "Evidence for the registered measure: Workers and representatives informed before use."
+      },
+      {
+        "id": "A-58",
+        "missing": "Evidence for the registered measure: AI users' understanding of capabilities and limits."
+      },
+      {
+        "id": "A-59",
+        "missing": "Evidence for the registered measure: Skills lost or retained among AI users."
+      },
+      {
+        "id": "A-60",
+        "missing": "Evidence for the registered measure: Re- and up-skilling offered and taken up."
+      },
+      {
+        "id": "A-62",
+        "missing": "Evidence for the registered measure: Audit trail available for the deployment."
+      },
+      {
+        "id": "A-68",
+        "missing": "Evidence for the registered measure: Channel for third-party reports and its use."
+      }
+    ],
+    "unassigned": []
+  },
+  "ratings": [
+    {
+      "id": "A-01",
+      "requirement": "R1 Human agency and oversight",
+      "criterion": "Users can tell an outcome comes from an algorithm",
+      "stakeholderCode": "CS",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: What users and subjects are shown about the output's AI origin",
+        "measureChoice": "A",
+        "measureRationale": "What people actually receive is what they act on or contest. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "consequence",
+        "acceptanceCriterion": "What users and subjects are shown about the output's AI origin: every clinician receiving the alerts receives it.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "C"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Wong et al. 2021; Bennett et al. 2019.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: What users and subjects are shown about the output's AI origin.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-02",
+      "requirement": "R1 Human agency and oversight",
+      "criterion": "Users told they interact with AI, not a human",
+      "stakeholderCode": "CS",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": false,
+        "notApplicableReason": "Alerts are pages to clinicians at a score of 6 or more; there is no interactive or conversational interface (Wong et al. 2021).",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": "Not applicable",
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-03",
+      "requirement": "R1 Human agency and oversight",
+      "criterion": "Over-reliance by users prevented",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Share of outputs accepted without review, and overrides",
+        "measureChoice": "A",
+        "measureRationale": "How often the risk occurs in this use speaks to the decision more directly than an assessment document. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "consequence",
+        "acceptanceCriterion": "Share of outputs accepted without review, and overrides, known for this use and no more frequent than the level the hospital's own risk assessment accepts.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Wong et al. 2021; Bennett et al. 2019.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Share of outputs accepted without review, and overrides.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-04",
+      "requirement": "R1 Human agency and oversight",
+      "criterion": "No unintended interference with decision-making",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Decisions that changed because of the system",
+        "measureChoice": "A",
+        "measureRationale": "How often the risk occurs in this use speaks to the decision more directly than an assessment document. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "consequence",
+        "acceptanceCriterion": "Decisions that changed because of the system, known for this use and no more frequent than the level the hospital's own risk assessment accepts.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Wong et al. 2021; Bennett et al. 2019.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Decisions that changed because of the system.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-05",
+      "requirement": "R1 Human agency and oversight",
+      "criterion": "System simulates social interaction",
+      "stakeholderCode": "CS",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": false,
+        "notApplicableReason": "No social or conversational interaction: the output is a score and a page to clinicians (Wong et al. 2021).",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": "Not applicable",
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-06",
+      "requirement": "R1 Human agency and oversight",
+      "criterion": "Attachment, addiction or manipulation avoided",
+      "stakeholderCode": "CS",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Signs of attachment, addiction or manipulation among users",
+        "measureChoice": "A",
+        "measureRationale": "How often the risk occurs in this use speaks to the decision more directly than an assessment document. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "consequence",
+        "acceptanceCriterion": "Signs of attachment, addiction or manipulation among users, known for this use and no more frequent than the level the hospital's own risk assessment accepts.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Wong et al. 2021; Bennett et al. 2019.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Signs of attachment, addiction or manipulation among users.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-07",
+      "requirement": "R1 Human agency and oversight",
+      "criterion": "Oversight mode (self-learning, in/on the loop, in command)",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Oversight mode as deployed (in, on the loop, in command)",
+        "measureChoice": "A",
+        "measureRationale": "Who decides after an alert decides whether a wrong score can harm a patient.",
+        "acceptanceCriterionSource": "consequence",
+        "acceptanceCriterion": "A clinician decides on every response to an alert (human in the loop); the system takes no action itself.",
+        "evidenceClasses": [
+          "O",
+          "D"
+        ],
+        "amendments": []
+      },
+      "rating": "Met",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "O: Wong et al. 2021, the threshold was \"selected by our hospital operations committee to generate pages to clinicians\".",
+      "argument": "Alerts reach clinicians as pages and treatment stays with them; no autonomous action is reported. The registered element is shown met.",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-08",
+      "requirement": "R1 Human agency and oversight",
+      "criterion": "Overseers specifically trained",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: AI users trained before use, with content and date",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "AI users trained before use, with content and date, shown for the units using the alerts up to the cut-off.",
+        "evidenceClasses": [
+          "D",
+          "C"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Wong et al. 2021; Bennett et al. 2019.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: AI users trained before use, with content and date.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-09",
+      "requirement": "R1 Human agency and oversight",
+      "criterion": "Adverse effects detected and responded to",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Adverse effects detected and handled in a period",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Adverse effects detected and handled in a period, shown for the units using the alerts up to the cut-off.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Wong et al. 2021; Bennett et al. 2019.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Adverse effects detected and handled in a period.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-10",
+      "requirement": "R1 Human agency and oversight",
+      "criterion": "Safe way to stop or abort",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Outputs can be stopped or switched off in practice",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Outputs can be stopped or switched off in practice, shown for the units using the alerts up to the cut-off.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "C"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Wong et al. 2021; Bennett et al. 2019.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Outputs can be stopped or switched off in practice.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-11",
+      "requirement": "R1 Human agency and oversight",
+      "criterion": "Oversight fits self-learning or autonomy",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": false,
+        "notApplicableReason": "A penalized logistic regression model producing a 0-100 score (Bennett et al. 2019); no self-learning, online learning or autonomous action is reported.",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": "Not applicable",
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-12",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Faults, attacks or misuse could cause damage",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Damaging failures, attacks or misuse in a period",
+        "measureChoice": "A",
+        "measureRationale": "How often the risk occurs in this use speaks to the decision more directly than an assessment document. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "consequence",
+        "acceptanceCriterion": "Damaging failures, attacks or misuse in a period, known for this use and no more frequent than the level the hospital's own risk assessment accepts.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Wong et al. 2021; Bennett et al. 2019.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Damaging failures, attacks or misuse in a period.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-13",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Security certification or standard",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Valid certificate for the deployed version",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Valid certificate for the deployed version, shown for the units using the alerts up to the cut-off.",
+        "evidenceClasses": [
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Wong et al. 2021; Bennett et al. 2019.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Valid certificate for the deployed version.",
+      "missingHeldBy": "provider"
+    },
+    {
+      "id": "A-14",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Exposure to attacks assessed (poisoning, evasion, inversion)",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Attacks tested against the deployed system",
+        "measureChoice": "A",
+        "measureRationale": "How often the risk occurs in this use speaks to the decision more directly than an assessment document. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "consequence",
+        "acceptanceCriterion": "Attacks tested against the deployed system, known for this use and no more frequent than the level the hospital's own risk assessment accepts.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Wong et al. 2021; Bennett et al. 2019.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Attacks tested against the deployed system.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-15",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Integrity and security protected over the lifecycle",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Security measures working in operation",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Security measures working in operation, shown for the units using the alerts up to the cut-off.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Wong et al. 2021; Bennett et al. 2019.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Security measures working in operation.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-16",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Red-teamed or penetration-tested",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Red-team or penetration test of the deployment",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Red-team or penetration test of the deployment, shown for the units using the alerts up to the cut-off.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Wong et al. 2021; Bennett et al. 2019.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Red-team or penetration test of the deployment.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-17",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Users told how long security updates last",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Support and update terms users receive",
+        "measureChoice": "A",
+        "measureRationale": "What people actually receive is what they act on or contest. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "consequence",
+        "acceptanceCriterion": "Support and update terms users receive: every clinician receiving the alerts receives it.",
+        "evidenceClasses": [
+          "D",
+          "C"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Wong et al. 2021; Bennett et al. 2019.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Support and update terms users receive.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-18",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Risks, metrics and levels defined per use case",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Risk metrics defined for this use, with levels",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Risk metrics defined for this use, with levels, shown for the units using the alerts up to the cut-off.",
+        "evidenceClasses": [
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Wong et al. 2021; Bennett et al. 2019.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Risk metrics defined for this use, with levels.",
+      "missingHeldBy": "provider"
+    },
+    {
+      "id": "A-19",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Threats, consequences and misuse identified; criticality levels",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Hazards and misuse identified for this use",
+        "measureChoice": "A",
+        "measureRationale": "How often the risk occurs in this use speaks to the decision more directly than an assessment document. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "consequence",
+        "acceptanceCriterion": "Hazards and misuse identified for this use, known for this use and no more frequent than the level the hospital's own risk assessment accepts.",
+        "evidenceClasses": [
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Wong et al. 2021; Bennett et al. 2019.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Hazards and misuse identified for this use.",
+      "missingHeldBy": "provider"
+    },
+    {
+      "id": "A-20",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Critical decisions' dependence on reliability assessed",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Reliability needed by this decision, stated",
+        "measureChoice": "A",
+        "measureRationale": "How often the risk occurs in this use speaks to the decision more directly than an assessment document. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "consequence",
+        "acceptanceCriterion": "Reliability needed by this decision, stated, known for this use and no more frequent than the level the hospital's own risk assessment accepts.",
+        "evidenceClasses": [
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Wong et al. 2021; Bennett et al. 2019.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Reliability needed by this decision, stated.",
+      "missingHeldBy": "provider"
+    },
+    {
+      "id": "A-21",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Fault tolerance planned",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Fallback that takes over when the system fails",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Fallback that takes over when the system fails, shown for the units using the alerts up to the cut-off.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Wong et al. 2021; Bennett et al. 2019.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Fallback that takes over when the system fails.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-22",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Changes trigger a new robustness and safety review",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Changes that triggered a new review, in a period",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Changes that triggered a new review, in a period, shown for the units using the alerts up to the cut-off.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Wong et al. 2021; Bennett et al. 2019.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Changes that triggered a new review, in a period.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-23",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Low accuracy could cause damage",
+      "stakeholderCode": "CS",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Sensitivity and false-alert rate at the operating threshold",
+        "measureChoice": "A",
+        "measureRationale": "Missed sepsis and alert fatigue both depend on error rates at the threshold in use (score 6 or more); AUC hides that trade-off.",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "At the operating threshold: sensitivity at least 0.61 and PPV at least 0.33, the early-warning-score baseline in Bennett et al. (2019), published before the cut-off.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Not met",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "O: Wong et al. 2021, hospitalization-level sensitivity 33%, specificity 83%, PPV 12%, NPV 95% at a score of 6 or more; a score of 6 or more occurred in 18% of hospitalizations (6,971 of 38,455).",
+      "argument": "Sensitivity 0.33 and PPV 0.12 are both below the registered baseline, so the expected elements are shown not met (G4). The data are the hospital's own patients at its own threshold, so they are attributable to the deployed system.",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-24",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Data current, complete and representative of deployment",
+      "stakeholderCode": "CS",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Match between training population and the customer's population",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Match between training population and the customer's population, shown for the units using the alerts up to the cut-off.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "D: Bennett et al. 2019 states the model was developed on data from three health systems; it does not describe those populations.",
+      "argument": "Without the training population the match with this hospital's patients cannot be shown, so no element is shown (G4).",
+      "missing": "Description of the training population (sites, case mix, sepsis definition) to compare with the hospital's patients.",
+      "missingHeldBy": "provider"
+    },
+    {
+      "id": "A-25",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Accuracy monitored and documented",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Accuracy tracked in operation over a period",
+        "measureChoice": "A",
+        "measureRationale": "Accuracy tracked in operation is what would have caught the gap before expansion.",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Accuracy evaluated on the hospital's own patients since go-live (11 March 2019), and reported to the operations committee at least quarterly.",
+        "evidenceClasses": [
+          "O",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Partly met",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "O: Wong et al. 2021, evaluation of the model on the hospital's own hospitalizations, 6 Dec 2018 - 20 Oct 2019.",
+      "argument": "The first element is shown met. No record of periodic reporting to the committee was found, so that element is missing and none is shown not met (G4).",
+      "missing": "Quarterly accuracy reports to the operations committee since 11 March 2019.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-26",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Operation could invalidate training data or assumptions",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Drift or feedback effects in inputs and outcomes over time",
+        "measureChoice": "A",
+        "measureRationale": "How often the risk occurs in this use speaks to the decision more directly than an assessment document. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "consequence",
+        "acceptanceCriterion": "Drift or feedback effects in inputs and outcomes over time, known for this use and no more frequent than the level the hospital's own risk assessment accepts.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Wong et al. 2021; Bennett et al. 2019.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Drift or feedback effects in inputs and outcomes over time.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-27",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Expected accuracy communicated to users and subjects",
+      "stakeholderCode": "CS",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Accuracy information users receive",
+        "measureChoice": "A",
+        "measureRationale": "What people actually receive is what they act on or contest. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "consequence",
+        "acceptanceCriterion": "Accuracy information users receive: every clinician receiving the alerts receives it.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "C"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "Wong et al. 2021: \"only limited information is publicly available about the model's performance\". What clinicians were told is not reported.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "The accuracy information given to clinicians with the alerts.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-28",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Low reliability or reproducibility could cause damage; contexts tested",
+      "stakeholderCode": "CS",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Error rates by site, period or condition",
+        "measureChoice": "A",
+        "measureRationale": "Whether performance carries over from the published site to this hospital decides reliance.",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Hospitalization-level AUC at this hospital no more than 0.05 below the AUC published before the cut-off (0.73, Bennett et al. 2019).",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Not met",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "O: Wong et al. 2021, hospitalization-level AUC 0.63 (95% CI 0.62-0.64). D: Bennett et al. 2019, AUC 0.73 at UCHealth.",
+      "argument": "0.63 is 0.10 below 0.73, beyond the registered margin, so the element is shown not met. The two studies may define the unit of analysis differently; that weakens the comparison. Wong's time-horizon AUCs (0.72-0.76) would meet the margin, but Wong et al. explain that they overstate performance because they treat each prediction as independent; the registered measure is the hospitalization-level AUC.",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-29",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Verification, validation and logging in place",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Logs and validation records available for the deployment",
+        "measureChoice": "A",
+        "measureRationale": "Retrievable scores and a prior validation are what an audit of a wrong alert needs.",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Scores retained for every hospitalization and retrievable for audit, and a validation of the model on a comparable population published before go-live (11 March 2019).",
+        "evidenceClasses": [
+          "O",
+          "D"
+        ],
+        "amendments": []
+      },
+      "rating": "Met",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "O: Wong et al. 2021 analysed the model's scores as generated in the hospital's records for 38,455 hospitalizations. D: Bennett et al. 2019 (February 2019), validation at UCHealth.",
+      "argument": "Both expected elements are shown met. Bennett et al. has an Epic co-author, which the argument notes but which does not remove it as a validation.",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-30",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Tested fallback plans",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Fallback plan tested, with results",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Fallback plan tested, with results, shown for the units using the alerts up to the cut-off.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Wong et al. 2021; Bennett et al. 2019.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Fallback plan tested, with results.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-31",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Low-confidence results handled",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Low-confidence outputs flagged and handled",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Low-confidence outputs flagged and handled, shown for the units using the alerts up to the cut-off.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "C"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Wong et al. 2021; Bennett et al. 2019.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Low-confidence outputs flagged and handled.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-32",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Online continual learning; gaming the objective considered",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": false,
+        "notApplicableReason": "A penalized logistic regression model producing a 0-100 score (Bennett et al. 2019); no self-learning, online learning or autonomous action is reported.",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": "Not applicable",
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-36",
+      "requirement": "R3 Privacy and data governance",
+      "criterion": "GDPR-type measures (DPIA, DPO, minimisation, rights, by design)",
+      "stakeholderCode": "CS",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Each GDPR-type measure in place (DPIA, DPO, minimisation, rights)",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Each GDPR-type measure in place (DPIA, DPO, minimisation, rights), shown for the units using the alerts up to the cut-off.",
+        "evidenceClasses": [
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Wong et al. 2021; Bennett et al. 2019.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Each GDPR-type measure in place (DPIA, DPO, minimisation, rights).",
+      "missingHeldBy": "provider"
+    },
+    {
+      "id": "A-37",
+      "requirement": "R3 Privacy and data governance",
+      "criterion": "Implications of non-personal data considered",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Effects of non-personal data for this use",
+        "measureChoice": "A",
+        "measureRationale": "How often the risk occurs in this use speaks to the decision more directly than an assessment document. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "consequence",
+        "acceptanceCriterion": "Effects of non-personal data for this use, known for this use and no more frequent than the level the hospital's own risk assessment accepts.",
+        "evidenceClasses": [
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Wong et al. 2021; Bennett et al. 2019.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Effects of non-personal data for this use.",
+      "missingHeldBy": "provider"
+    },
+    {
+      "id": "A-38",
+      "requirement": "R3 Privacy and data governance",
+      "criterion": "Aligned with data-management standards",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Data-management standards followed",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Data-management standards followed, shown for the units using the alerts up to the cut-off.",
+        "evidenceClasses": [
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Wong et al. 2021; Bennett et al. 2019.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Data-management standards followed.",
+      "missingHeldBy": "provider"
+    },
+    {
+      "id": "A-39",
+      "requirement": "R4 Transparency",
+      "criterion": "Traceability: input and output quality, data and model per decision, logging",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Each traceability measure available for the deployment",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Each traceability measure available for the deployment, shown for the units using the alerts up to the cut-off.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Wong et al. 2021; Bennett et al. 2019.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Each traceability measure available for the deployment.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-40",
+      "requirement": "R4 Transparency",
+      "criterion": "Decisions explained to users",
+      "stakeholderCode": "CS",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Explanations users receive with outputs",
+        "measureChoice": "A",
+        "measureRationale": "What people actually receive is what they act on or contest. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "consequence",
+        "acceptanceCriterion": "Explanations users receive with outputs: every clinician receiving the alerts receives it.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Wong et al. 2021; Bennett et al. 2019.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Explanations users receive with outputs.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-41",
+      "requirement": "R4 Transparency",
+      "criterion": "Users surveyed on understanding",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Survey of AI users' understanding, with results",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Survey of AI users' understanding, with results, shown for the units using the alerts up to the cut-off.",
+        "evidenceClasses": [
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Wong et al. 2021; Bennett et al. 2019.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Survey of AI users' understanding, with results.",
+      "missingHeldBy": "provider"
+    },
+    {
+      "id": "A-42",
+      "requirement": "R4 Transparency",
+      "criterion": "Chatbot users told it is AI",
+      "stakeholderCode": "CS",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": false,
+        "notApplicableReason": "Not a chatbot.",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": "Not applicable",
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-43",
+      "requirement": "R4 Transparency",
+      "criterion": "Users told purpose, limits, error rates; training material",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Purpose, limits, error rates and training users receive",
+        "measureChoice": "A",
+        "measureRationale": "What people actually receive is what they act on or contest. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "consequence",
+        "acceptanceCriterion": "Purpose, limits, error rates and training users receive: every clinician receiving the alerts receives it.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "C"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Wong et al. 2021; Bennett et al. 2019.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Purpose, limits, error rates and training users receive.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-44",
+      "requirement": "R5 Diversity, non-discrimination and fairness",
+      "criterion": "Strategy to avoid unfair bias in data and design",
+      "stakeholderCode": "Ci",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Bias-prevention procedure in use",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Bias-prevention procedure in use, shown for the units using the alerts up to the cut-off.",
+        "evidenceClasses": [
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Wong et al. 2021; Bennett et al. 2019.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Bias-prevention procedure in use.",
+      "missingHeldBy": "provider"
+    },
+    {
+      "id": "A-46",
+      "requirement": "R5 Diversity, non-discrimination and fairness",
+      "criterion": "Bias awareness for designers and developers",
+      "stakeholderCode": "Ci",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Provider staff trained on bias",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Provider staff trained on bias, shown for the units using the alerts up to the cut-off.",
+        "evidenceClasses": [
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Wong et al. 2021; Bennett et al. 2019.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Provider staff trained on bias.",
+      "missingHeldBy": "provider"
+    },
+    {
+      "id": "A-49",
+      "requirement": "R5 Diversity, non-discrimination and fairness",
+      "criterion": "Fits the variety of preferences and abilities",
+      "stakeholderCode": "CS",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Groups excluded by the design",
+        "measureChoice": "A",
+        "measureRationale": "How often the risk occurs in this use speaks to the decision more directly than an assessment document. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "consequence",
+        "acceptanceCriterion": "Groups excluded by the design, known for this use and no more frequent than the level the hospital's own risk assessment accepts.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Wong et al. 2021; Bennett et al. 2019.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Groups excluded by the design.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-50",
+      "requirement": "R5 Diversity, non-discrimination and fairness",
+      "criterion": "Interface usable with disabilities and assistive technology",
+      "stakeholderCode": "CS",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Accessibility of what users receive",
+        "measureChoice": "A",
+        "measureRationale": "What people actually receive is what they act on or contest. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "consequence",
+        "acceptanceCriterion": "Accessibility of what users receive: every clinician receiving the alerts receives it.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Wong et al. 2021; Bennett et al. 2019.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Accessibility of what users receive.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-51",
+      "requirement": "R5 Diversity, non-discrimination and fairness",
+      "criterion": "Universal Design principles applied",
+      "stakeholderCode": "Ci",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Universal Design applied, by record",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Universal Design applied, by record, shown for the units using the alerts up to the cut-off.",
+        "evidenceClasses": [
+          "D",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Wong et al. 2021; Bennett et al. 2019.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Universal Design applied, by record.",
+      "missingHeldBy": "provider"
+    },
+    {
+      "id": "A-53",
+      "requirement": "R5 Diversity, non-discrimination and fairness",
+      "criterion": "Wide stakeholder participation in design",
+      "stakeholderCode": "Ci",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Stakeholders who took part in design",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Stakeholders who took part in design, shown for the units using the alerts up to the cut-off.",
+        "evidenceClasses": [
+          "D",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Wong et al. 2021; Bennett et al. 2019.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Stakeholders who took part in design.",
+      "missingHeldBy": "provider"
+    },
+    {
+      "id": "A-56",
+      "requirement": "R6 Societal and environmental well-being",
+      "criterion": "Impact on human work",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Changes in work arrangements after introduction",
+        "measureChoice": "A",
+        "measureRationale": "How often the risk occurs in this use speaks to the decision more directly than an assessment document. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "consequence",
+        "acceptanceCriterion": "Changes in work arrangements after introduction, known for this use and no more frequent than the level the hospital's own risk assessment accepts.",
+        "evidenceClasses": [
+          "O",
+          "C"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Wong et al. 2021; Bennett et al. 2019.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Changes in work arrangements after introduction.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-57",
+      "requirement": "R6 Societal and environmental well-being",
+      "criterion": "Workers and representatives informed and consulted",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Workers and representatives informed before use",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Workers and representatives informed before use, shown for the units using the alerts up to the cut-off.",
+        "evidenceClasses": [
+          "C"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Wong et al. 2021; Bennett et al. 2019.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Workers and representatives informed before use.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-58",
+      "requirement": "R6 Societal and environmental well-being",
+      "criterion": "Impacts on work understood; workers know capabilities",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: AI users' understanding of capabilities and limits",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "AI users' understanding of capabilities and limits, shown for the units using the alerts up to the cut-off.",
+        "evidenceClasses": [
+          "D",
+          "C"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Wong et al. 2021; Bennett et al. 2019.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: AI users' understanding of capabilities and limits.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-59",
+      "requirement": "R6 Societal and environmental well-being",
+      "criterion": "De-skilling risk countered",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Skills lost or retained among AI users",
+        "measureChoice": "A",
+        "measureRationale": "How often the risk occurs in this use speaks to the decision more directly than an assessment document. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "consequence",
+        "acceptanceCriterion": "Skills lost or retained among AI users, known for this use and no more frequent than the level the hospital's own risk assessment accepts.",
+        "evidenceClasses": [
+          "C"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Wong et al. 2021; Bennett et al. 2019.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Skills lost or retained among AI users.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-60",
+      "requirement": "R6 Societal and environmental well-being",
+      "criterion": "New skills supported by training",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Re- and up-skilling offered and taken up",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Re- and up-skilling offered and taken up, shown for the units using the alerts up to the cut-off.",
+        "evidenceClasses": [
+          "D",
+          "C"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Wong et al. 2021; Bennett et al. 2019.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Re- and up-skilling offered and taken up.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-62",
+      "requirement": "R7 Accountability",
+      "criterion": "Auditability: development traceability, data sourcing, logging",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Audit trail available for the deployment",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Audit trail available for the deployment, shown for the units using the alerts up to the cut-off.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Wong et al. 2021; Bennett et al. 2019.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Audit trail available for the deployment.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-63",
+      "requirement": "R7 Accountability",
+      "criterion": "Auditable by independent third parties",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Access the provider offers to an independent auditor",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Access the provider offers to an independent auditor, shown for the units using the alerts up to the cut-off.",
+        "evidenceClasses": [
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Wong et al. 2021; Bennett et al. 2019.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Access the provider offers to an independent auditor.",
+      "missingHeldBy": "provider"
+    },
+    {
+      "id": "A-64",
+      "requirement": "R7 Accountability",
+      "criterion": "External guidance or third-party auditing beyond development",
+      "stakeholderCode": "Ci",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Third-party oversight in operation",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Third-party oversight in operation, shown for the units using the alerts up to the cut-off.",
+        "evidenceClasses": [
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Wong et al. 2021; Bennett et al. 2019.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Third-party oversight in operation.",
+      "missingHeldBy": "provider"
+    },
+    {
+      "id": "A-65",
+      "requirement": "R7 Accountability",
+      "criterion": "Risk training including legal framework",
+      "stakeholderCode": "Ci",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Risk training given, including legal framework",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Risk training given, including legal framework, shown for the units using the alerts up to the cut-off.",
+        "evidenceClasses": [
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Wong et al. 2021; Bennett et al. 2019.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Risk training given, including legal framework.",
+      "missingHeldBy": "provider"
+    },
+    {
+      "id": "A-66",
+      "requirement": "R7 Accountability",
+      "criterion": "AI ethics review board or similar",
+      "stakeholderCode": "Ci",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Ethics board and its decisions on this system",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Ethics board and its decisions on this system, shown for the units using the alerts up to the cut-off.",
+        "evidenceClasses": [
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Wong et al. 2021; Bennett et al. 2019.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Ethics board and its decisions on this system.",
+      "missingHeldBy": "provider"
+    },
+    {
+      "id": "A-67",
+      "requirement": "R7 Accountability",
+      "criterion": "ALTAI adherence monitored; trade-offs documented",
+      "stakeholderCode": "Ci",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Monitoring of trustworthiness and documented trade-offs",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Monitoring of trustworthiness and documented trade-offs, shown for the units using the alerts up to the cut-off.",
+        "evidenceClasses": [
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Wong et al. 2021; Bennett et al. 2019.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Monitoring of trustworthiness and documented trade-offs.",
+      "missingHeldBy": "provider"
+    },
+    {
+      "id": "A-68",
+      "requirement": "R7 Accountability",
+      "criterion": "Third parties can report vulnerabilities, risks or biases",
+      "stakeholderCode": "CS",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Channel for third-party reports and its use",
+        "measureChoice": "A",
+        "measureRationale": "What people actually receive is what they act on or contest. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "consequence",
+        "acceptanceCriterion": "Channel for third-party reports and its use: every clinician receiving the alerts receives it.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Wong et al. 2021; Bennett et al. 2019.",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Channel for third-party reports and its use.",
+      "missingHeldBy": "customer"
+    }
+  ],
+  "notRatedForThisStakeholder": [
+    {
+      "id": "A-33",
+      "stakeholderCode": "S"
+    },
+    {
+      "id": "A-34",
+      "stakeholderCode": "S"
+    },
+    {
+      "id": "A-35",
+      "stakeholderCode": "S"
+    },
+    {
+      "id": "A-45",
+      "stakeholderCode": "S"
+    },
+    {
+      "id": "A-47",
+      "stakeholderCode": "S"
+    },
+    {
+      "id": "A-48",
+      "stakeholderCode": "S"
+    },
+    {
+      "id": "A-52",
+      "stakeholderCode": "S"
+    },
+    {
+      "id": "A-54",
+      "stakeholderCode": "X"
+    },
+    {
+      "id": "A-55",
+      "stakeholderCode": "X"
+    },
+    {
+      "id": "A-61",
+      "stakeholderCode": "X"
+    },
+    {
+      "id": "A-69",
+      "stakeholderCode": "S"
+    }
+  ],
+  "note": "Ratings were assigned by an AI rater, not a human assessor, following rules G1-G5. Plans are generic where marked. The tool records them and shows the G4 rule."
+}

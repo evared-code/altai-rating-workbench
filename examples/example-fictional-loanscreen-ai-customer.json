@@ -1,0 +1,1543 @@
+{
+  "tool": "ALTAI Rating Workbench 1.1",
+  "generated": "2026-03-12T14:00:00Z",
+  "example": true,
+  "case": "EXAMPLE: LoanScreen 2 at a fictional credit union",
+  "assessor": "Example assessor",
+  "evidenceCutoff": "2026-03-01",
+  "stakeholder": "AI customer",
+  "plan": {
+    "source": "ALTAI Plan Codebook (generic), Apitchaka Singjai, 2026-11-11",
+    "stakeholderCodes": "draft by Claude from codebook paraphrases; to be verified against the full ALTAI wording (rule R1)"
+  },
+  "summary": {
+    "inScope": 58,
+    "plansRegistered": 15,
+    "notApplicable": 1,
+    "toRate": 57,
+    "rated": 13,
+    "notYetRated": 44,
+    "met": 5,
+    "partlyMet": 3,
+    "notMet": 2,
+    "cannotJudge": 3,
+    "coverageR": 0.175,
+    "coverageDefinition": "(Met + Partly met + Not met) / applicable criteria for this stakeholder",
+    "c1RatedBeforeRegistration": []
+  },
+  "requirements": {
+    "toProvider": [
+      {
+        "id": "A-13",
+        "missing": "Certificate with scope and version, or the audit report behind it."
+      },
+      {
+        "id": "A-16",
+        "missing": "Latest penetration test report or its executive summary for the scoring service."
+      },
+      {
+        "id": "A-23",
+        "missing": "False decline rate by age band at the operating threshold, or the mapping needed to compute it."
+      },
+      {
+        "id": "A-44",
+        "missing": "The provider's bias-prevention procedure."
+      }
+    ],
+    "toCustomer": [
+      {
+        "id": "A-03",
+        "missing": "Override logs for February and March 2026."
+      },
+      {
+        "id": "A-25",
+        "missing": "Monthly accuracy reports for January and February 2026."
+      }
+    ],
+    "unassigned": []
+  },
+  "ratings": [
+    {
+      "id": "A-01",
+      "requirement": "R1 Human agency and oversight",
+      "criterion": "Users can tell an outcome comes from an algorithm",
+      "stakeholderCode": "CS",
+      "plan": {
+        "registeredAt": "2026-03-02T09:05:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: What users and subjects are shown about the output's AI origin",
+        "measureChoice": "A",
+        "measureRationale": "Applicants act on the decision letter, so what they actually receive is what matters.",
+        "acceptanceCriterionSource": "obligation",
+        "acceptanceCriterion": "Every decision letter states that an automated score was used.",
+        "evidenceClasses": [
+          "O",
+          "D"
+        ],
+        "amendments": []
+      },
+      "rating": "Met",
+      "ratedAt": "2026-03-12T10:20:00Z",
+      "evidence": "O: 40 decision letters sampled from March 2026 (customer archive). D: provider instructions for use v2.1.",
+      "argument": "All 40 letters carry the statement required by the registered criterion; the letter template is the deployed one.",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-02",
+      "requirement": "R1 Human agency and oversight",
+      "criterion": "Users told they interact with AI, not a human",
+      "stakeholderCode": "CS",
+      "plan": {
+        "registeredAt": null,
+        "applies": null,
+        "notApplicableReason": "",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": null,
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-03",
+      "requirement": "R1 Human agency and oversight",
+      "criterion": "Over-reliance by users prevented",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-03-02T09:12:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Share of outputs accepted without review, and overrides",
+        "measureChoice": "A",
+        "measureRationale": "Over-reliance shows in how often loan officers accept scores without review; a procedure alone does not show it.",
+        "acceptanceCriterionSource": "consequence",
+        "acceptanceCriterion": "Override or documented review in at least 10% of declined cases, each month.",
+        "evidenceClasses": [
+          "O",
+          "C"
+        ],
+        "amendments": []
+      },
+      "rating": "Partly met",
+      "ratedAt": "2026-03-12T10:41:00Z",
+      "evidence": "C: override log for January 2026 only (customer records).",
+      "argument": "January meets the 10% level (14%). February and March logs were not retrieved, so two of three monthly elements are missing.",
+      "missing": "Override logs for February and March 2026.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-04",
+      "requirement": "R1 Human agency and oversight",
+      "criterion": "No unintended interference with decision-making",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": null,
+        "applies": null,
+        "notApplicableReason": "",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": null,
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-05",
+      "requirement": "R1 Human agency and oversight",
+      "criterion": "System simulates social interaction",
+      "stakeholderCode": "CS",
+      "plan": {
+        "registeredAt": null,
+        "applies": null,
+        "notApplicableReason": "",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": null,
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-06",
+      "requirement": "R1 Human agency and oversight",
+      "criterion": "Attachment, addiction or manipulation avoided",
+      "stakeholderCode": "CS",
+      "plan": {
+        "registeredAt": null,
+        "applies": null,
+        "notApplicableReason": "",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": null,
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-07",
+      "requirement": "R1 Human agency and oversight",
+      "criterion": "Oversight mode (self-learning, in/on the loop, in command)",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-03-02T09:20:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Oversight mode as deployed (in, on the loop, in command)",
+        "measureChoice": "A",
+        "measureRationale": "The oversight mode in operation decides who can stop a decline; the documented mode may differ.",
+        "acceptanceCriterionSource": "consequence",
+        "acceptanceCriterion": "Human in the loop for every decline.",
+        "evidenceClasses": [
+          "O",
+          "D"
+        ],
+        "amendments": []
+      },
+      "rating": "Met",
+      "ratedAt": "2026-03-12T11:02:00Z",
+      "evidence": "O: workflow observed on 3 March 2026. D: configuration sheet v2.1.",
+      "argument": "Every decline in the observed workflow waits for an officer's sign-off, as the criterion requires.",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-08",
+      "requirement": "R1 Human agency and oversight",
+      "criterion": "Overseers specifically trained",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-03-02T09:31:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: AI users trained before use, with content and date",
+        "measureChoice": "A",
+        "measureRationale": "Training actually given to officers is what reduces misuse; a programme on paper does not.",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Every officer using the system trained before first use, with date and content recorded.",
+        "evidenceClasses": [
+          "C",
+          "D"
+        ],
+        "amendments": []
+      },
+      "rating": "Not met",
+      "ratedAt": "2026-03-12T11:15:00Z",
+      "evidence": "C: training register, March 2026.",
+      "argument": "Four of 23 officers started using the system before their training date. One element shown not met gives Not met (G4).",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-09",
+      "requirement": "R1 Human agency and oversight",
+      "criterion": "Adverse effects detected and responded to",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": null,
+        "applies": null,
+        "notApplicableReason": "",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": null,
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-10",
+      "requirement": "R1 Human agency and oversight",
+      "criterion": "Safe way to stop or abort",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-03-02T09:40:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Outputs can be stopped or switched off in practice",
+        "measureChoice": "A",
+        "measureRationale": "Being able to stop scoring in practice matters more than a written procedure.",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Scoring can be switched off for all branches within one working hour.",
+        "evidenceClasses": [
+          "O",
+          "D"
+        ],
+        "amendments": []
+      },
+      "rating": "Met",
+      "ratedAt": "2026-03-12T11:30:00Z",
+      "evidence": "O: switch-off test on 4 March 2026, 22 minutes end to end.",
+      "argument": "The test met the one-hour criterion on the deployed configuration.",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-11",
+      "requirement": "R1 Human agency and oversight",
+      "criterion": "Oversight fits self-learning or autonomy",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": null,
+        "applies": null,
+        "notApplicableReason": "",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": null,
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-12",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Faults, attacks or misuse could cause damage",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": null,
+        "applies": null,
+        "notApplicableReason": "",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": null,
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-13",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Security certification or standard",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-03-02T09:48:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Valid certificate for the deployed version",
+        "measureChoice": "A",
+        "measureRationale": "A valid certificate for the deployed version is what a customer can rely on.",
+        "acceptanceCriterionSource": "obligation",
+        "acceptanceCriterion": "A current certificate against a named security standard covering version 2.1.",
+        "evidenceClasses": [
+          "D",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-03-12T11:44:00Z",
+      "evidence": "D: provider web page names a standard but no certificate or scope.",
+      "argument": "No evidence attributable to version 2.1 was found, so no element is shown (G4).",
+      "missing": "Certificate with scope and version, or the audit report behind it.",
+      "missingHeldBy": "provider"
+    },
+    {
+      "id": "A-14",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Exposure to attacks assessed (poisoning, evasion, inversion)",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": null,
+        "applies": null,
+        "notApplicableReason": "",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": null,
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-15",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Integrity and security protected over the lifecycle",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": null,
+        "applies": null,
+        "notApplicableReason": "",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": null,
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-16",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Red-teamed or penetration-tested",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-03-02T09:55:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "B: Provider's red-team or penetration test reports",
+        "measureChoice": "B",
+        "measureRationale": "The customer cannot run a penetration test on the provider's platform; the provider's reports are the realistic measure.",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "A penetration test of the scoring service within the last 12 months, with findings and fixes.",
+        "evidenceClasses": [
+          "D",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-03-12T11:58:00Z",
+      "evidence": "None attributable to the deployed service.",
+      "argument": "No report or summary covers the deployed service.",
+      "missing": "Latest penetration test report or its executive summary for the scoring service.",
+      "missingHeldBy": "provider"
+    },
+    {
+      "id": "A-17",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Users told how long security updates last",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": null,
+        "applies": null,
+        "notApplicableReason": "",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": null,
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-18",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Risks, metrics and levels defined per use case",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": null,
+        "applies": null,
+        "notApplicableReason": "",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": null,
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-19",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Threats, consequences and misuse identified; criticality levels",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": null,
+        "applies": null,
+        "notApplicableReason": "",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": null,
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-20",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Critical decisions' dependence on reliability assessed",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": null,
+        "applies": null,
+        "notApplicableReason": "",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": null,
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-21",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Fault tolerance planned",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": null,
+        "applies": null,
+        "notApplicableReason": "",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": null,
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-22",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Changes trigger a new robustness and safety review",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": null,
+        "applies": null,
+        "notApplicableReason": "",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": null,
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-23",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Low accuracy could cause damage",
+      "stakeholderCode": "CS",
+      "plan": {
+        "registeredAt": "2026-03-02T10:05:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Sensitivity and false-alert rate at the operating threshold",
+        "measureChoice": "A",
+        "measureRationale": "Error rates at the threshold in use drive both wrongful declines and bad loans; AUC hides that trade-off.",
+        "acceptanceCriterionSource": "consequence",
+        "acceptanceCriterion": "At the operating threshold: false decline rate at most 8% overall and in each age band named in the plan.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Partly met",
+      "ratedAt": "2026-03-12T12:20:00Z",
+      "evidence": "O: customer-run test on 1,200 applications from 2025 with known repayment (customer records).",
+      "argument": "Overall false decline rate 6.9% meets the criterion. Age-band results need the provider's age mapping, so those elements are missing.",
+      "missing": "False decline rate by age band at the operating threshold, or the mapping needed to compute it.",
+      "missingHeldBy": "provider"
+    },
+    {
+      "id": "A-24",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Data current, complete and representative of deployment",
+      "stakeholderCode": "CS",
+      "plan": {
+        "registeredAt": null,
+        "applies": null,
+        "notApplicableReason": "",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": null,
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-25",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Accuracy monitored and documented",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-03-02T10:12:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Accuracy tracked in operation over a period",
+        "measureChoice": "A",
+        "measureRationale": "Monitoring that actually runs is what catches drift.",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Monthly accuracy report for every month since go-live.",
+        "evidenceClasses": [
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Partly met",
+      "ratedAt": "2026-03-12T12:35:00Z",
+      "evidence": "C: monthly reports for October to December 2025.",
+      "argument": "Three monthly reports meet the criterion; January and February 2026 were not produced.",
+      "missing": "Monthly accuracy reports for January and February 2026.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-26",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Operation could invalidate training data or assumptions",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": null,
+        "applies": null,
+        "notApplicableReason": "",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": null,
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-27",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Expected accuracy communicated to users and subjects",
+      "stakeholderCode": "CS",
+      "plan": {
+        "registeredAt": null,
+        "applies": null,
+        "notApplicableReason": "",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": null,
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-28",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Low reliability or reproducibility could cause damage; contexts tested",
+      "stakeholderCode": "CS",
+      "plan": {
+        "registeredAt": null,
+        "applies": null,
+        "notApplicableReason": "",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": null,
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-29",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Verification, validation and logging in place",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-03-02T10:20:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Logs and validation records available for the deployment",
+        "measureChoice": "A",
+        "measureRationale": "Logs the customer can retrieve show what was decided and why.",
+        "acceptanceCriterionSource": "obligation",
+        "acceptanceCriterion": "Inputs, score and version retained for every decision for 6 months.",
+        "evidenceClasses": [
+          "O",
+          "D"
+        ],
+        "amendments": []
+      },
+      "rating": "Met",
+      "ratedAt": "2026-03-12T12:50:00Z",
+      "evidence": "O: 20 decisions retrieved from the log on 5 March 2026.",
+      "argument": "All 20 records hold input, score and version, older than 6 months included.",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-30",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Tested fallback plans",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": null,
+        "applies": null,
+        "notApplicableReason": "",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": null,
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-31",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Low-confidence results handled",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": null,
+        "applies": null,
+        "notApplicableReason": "",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": null,
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-32",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Online continual learning; gaming the objective considered",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-03-02T10:24:00Z",
+        "applies": false,
+        "notApplicableReason": "Version 2.1 is a fixed model; the provider retrains offline and releases new versions.",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": "Not applicable",
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-36",
+      "requirement": "R3 Privacy and data governance",
+      "criterion": "GDPR-type measures (DPIA, DPO, minimisation, rights, by design)",
+      "stakeholderCode": "CS",
+      "plan": {
+        "registeredAt": "2026-03-02T10:33:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Each GDPR-type measure in place (DPIA, DPO, minimisation, rights)",
+        "measureChoice": "A",
+        "measureRationale": "Each GDPR-type measure must be in place for applicants' data, not only described.",
+        "acceptanceCriterionSource": "obligation",
+        "acceptanceCriterion": "A DPIA covering the scoring, a named DPO, and a working route for access requests.",
+        "evidenceClasses": [
+          "C",
+          "D"
+        ],
+        "amendments": []
+      },
+      "rating": "Met",
+      "ratedAt": "2026-03-12T13:05:00Z",
+      "evidence": "C: DPIA of January 2026; DPO appointment; access-request log.",
+      "argument": "All three elements are shown and cover the scoring use.",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-37",
+      "requirement": "R3 Privacy and data governance",
+      "criterion": "Implications of non-personal data considered",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": null,
+        "applies": null,
+        "notApplicableReason": "",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": null,
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-38",
+      "requirement": "R3 Privacy and data governance",
+      "criterion": "Aligned with data-management standards",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": null,
+        "applies": null,
+        "notApplicableReason": "",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": null,
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-39",
+      "requirement": "R4 Transparency",
+      "criterion": "Traceability: input and output quality, data and model per decision, logging",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": null,
+        "applies": null,
+        "notApplicableReason": "",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": null,
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-40",
+      "requirement": "R4 Transparency",
+      "criterion": "Decisions explained to users",
+      "stakeholderCode": "CS",
+      "plan": {
+        "registeredAt": "2026-03-02T10:41:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Explanations users receive with outputs",
+        "measureChoice": "A",
+        "measureRationale": "Applicants need the reasons they actually receive to contest a decline.",
+        "acceptanceCriterionSource": "obligation",
+        "acceptanceCriterion": "Every decline letter gives the main reasons in plain language.",
+        "evidenceClasses": [
+          "O",
+          "D"
+        ],
+        "amendments": []
+      },
+      "rating": "Not met",
+      "ratedAt": "2026-03-12T13:20:00Z",
+      "evidence": "O: 25 decline letters sampled from March 2026.",
+      "argument": "Letters give a score band but no reasons, so the registered element is shown not met.",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-41",
+      "requirement": "R4 Transparency",
+      "criterion": "Users surveyed on understanding",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": null,
+        "applies": null,
+        "notApplicableReason": "",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": null,
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-42",
+      "requirement": "R4 Transparency",
+      "criterion": "Chatbot users told it is AI",
+      "stakeholderCode": "CS",
+      "plan": {
+        "registeredAt": null,
+        "applies": null,
+        "notApplicableReason": "",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": null,
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-43",
+      "requirement": "R4 Transparency",
+      "criterion": "Users told purpose, limits, error rates; training material",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": null,
+        "applies": null,
+        "notApplicableReason": "",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": null,
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-44",
+      "requirement": "R5 Diversity, non-discrimination and fairness",
+      "criterion": "Strategy to avoid unfair bias in data and design",
+      "stakeholderCode": "Ci",
+      "plan": {
+        "registeredAt": "2026-03-02T10:50:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "B: Documented bias strategy",
+        "measureChoice": "B",
+        "measureRationale": "The customer cannot see inside development; the provider's documented strategy is the measure.",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "A written bias-prevention procedure covering data selection and testing.",
+        "evidenceClasses": [
+          "D",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-03-12T13:31:00Z",
+      "evidence": "D: marketing brochure states the model is fair; no procedure.",
+      "argument": "A statement is not the procedure the criterion names, so no element is shown.",
+      "missing": "The provider's bias-prevention procedure.",
+      "missingHeldBy": "provider"
+    },
+    {
+      "id": "A-46",
+      "requirement": "R5 Diversity, non-discrimination and fairness",
+      "criterion": "Bias awareness for designers and developers",
+      "stakeholderCode": "Ci",
+      "plan": {
+        "registeredAt": null,
+        "applies": null,
+        "notApplicableReason": "",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": null,
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-49",
+      "requirement": "R5 Diversity, non-discrimination and fairness",
+      "criterion": "Fits the variety of preferences and abilities",
+      "stakeholderCode": "CS",
+      "plan": {
+        "registeredAt": null,
+        "applies": null,
+        "notApplicableReason": "",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": null,
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-50",
+      "requirement": "R5 Diversity, non-discrimination and fairness",
+      "criterion": "Interface usable with disabilities and assistive technology",
+      "stakeholderCode": "CS",
+      "plan": {
+        "registeredAt": null,
+        "applies": null,
+        "notApplicableReason": "",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": null,
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-51",
+      "requirement": "R5 Diversity, non-discrimination and fairness",
+      "criterion": "Universal Design principles applied",
+      "stakeholderCode": "Ci",
+      "plan": {
+        "registeredAt": null,
+        "applies": null,
+        "notApplicableReason": "",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": null,
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-53",
+      "requirement": "R5 Diversity, non-discrimination and fairness",
+      "criterion": "Wide stakeholder participation in design",
+      "stakeholderCode": "Ci",
+      "plan": {
+        "registeredAt": null,
+        "applies": null,
+        "notApplicableReason": "",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": null,
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-56",
+      "requirement": "R6 Societal and environmental well-being",
+      "criterion": "Impact on human work",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": null,
+        "applies": null,
+        "notApplicableReason": "",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": null,
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-57",
+      "requirement": "R6 Societal and environmental well-being",
+      "criterion": "Workers and representatives informed and consulted",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": null,
+        "applies": null,
+        "notApplicableReason": "",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": null,
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-58",
+      "requirement": "R6 Societal and environmental well-being",
+      "criterion": "Impacts on work understood; workers know capabilities",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": null,
+        "applies": null,
+        "notApplicableReason": "",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": null,
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-59",
+      "requirement": "R6 Societal and environmental well-being",
+      "criterion": "De-skilling risk countered",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": null,
+        "applies": null,
+        "notApplicableReason": "",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": null,
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-60",
+      "requirement": "R6 Societal and environmental well-being",
+      "criterion": "New skills supported by training",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": null,
+        "applies": null,
+        "notApplicableReason": "",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": null,
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-62",
+      "requirement": "R7 Accountability",
+      "criterion": "Auditability: development traceability, data sourcing, logging",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": null,
+        "applies": null,
+        "notApplicableReason": "",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": null,
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-63",
+      "requirement": "R7 Accountability",
+      "criterion": "Auditable by independent third parties",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-03-02T10:58:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Access the provider offers to an independent auditor",
+        "measureChoice": "A",
+        "measureRationale": "Access an independent auditor actually gets is what matters.",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Contract grants audit access for an independent auditor named by the customer.",
+        "evidenceClasses": [
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": null,
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-64",
+      "requirement": "R7 Accountability",
+      "criterion": "External guidance or third-party auditing beyond development",
+      "stakeholderCode": "Ci",
+      "plan": {
+        "registeredAt": null,
+        "applies": null,
+        "notApplicableReason": "",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": null,
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-65",
+      "requirement": "R7 Accountability",
+      "criterion": "Risk training including legal framework",
+      "stakeholderCode": "Ci",
+      "plan": {
+        "registeredAt": null,
+        "applies": null,
+        "notApplicableReason": "",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": null,
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-66",
+      "requirement": "R7 Accountability",
+      "criterion": "AI ethics review board or similar",
+      "stakeholderCode": "Ci",
+      "plan": {
+        "registeredAt": null,
+        "applies": null,
+        "notApplicableReason": "",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": null,
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-67",
+      "requirement": "R7 Accountability",
+      "criterion": "ALTAI adherence monitored; trade-offs documented",
+      "stakeholderCode": "Ci",
+      "plan": {
+        "registeredAt": null,
+        "applies": null,
+        "notApplicableReason": "",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": null,
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-68",
+      "requirement": "R7 Accountability",
+      "criterion": "Third parties can report vulnerabilities, risks or biases",
+      "stakeholderCode": "CS",
+      "plan": {
+        "registeredAt": null,
+        "applies": null,
+        "notApplicableReason": "",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": null,
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    }
+  ],
+  "notRatedForThisStakeholder": [
+    {
+      "id": "A-33",
+      "stakeholderCode": "S"
+    },
+    {
+      "id": "A-34",
+      "stakeholderCode": "S"
+    },
+    {
+      "id": "A-35",
+      "stakeholderCode": "S"
+    },
+    {
+      "id": "A-45",
+      "stakeholderCode": "S"
+    },
+    {
+      "id": "A-47",
+      "stakeholderCode": "S"
+    },
+    {
+      "id": "A-48",
+      "stakeholderCode": "S"
+    },
+    {
+      "id": "A-52",
+      "stakeholderCode": "S"
+    },
+    {
+      "id": "A-54",
+      "stakeholderCode": "X"
+    },
+    {
+      "id": "A-55",
+      "stakeholderCode": "X"
+    },
+    {
+      "id": "A-61",
+      "stakeholderCode": "X"
+    },
+    {
+      "id": "A-69",
+      "stakeholderCode": "S"
+    }
+  ],
+  "note": "FICTIONAL EXAMPLE for trying the import. The system, organisation, numbers and documents are invented. Not study data."
+}

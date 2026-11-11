@@ -1,0 +1,1920 @@
+{
+  "tool": "ALTAI Rating Workbench 1.2",
+  "generated": "2026-11-11T19:30:00Z",
+  "example": false,
+  "rater": {
+    "type": "AI",
+    "name": "Claude (Anthropic)",
+    "c1": "Not met: the plans were written after the AI rater had read the case evidence.",
+    "use": "Separate AI rater for comparison with the two human assessors, opened only after both have finished. Not a human rating; not study data for kappa between humans."
+  },
+  "case": "Rite Aid facial recognition (R0, outside evidence)",
+  "assessor": "AI rater (Claude)",
+  "evidenceCutoff": "2020-07-31",
+  "stakeholder": "AI customer",
+  "evidenceBase": [
+    "Reuters special report, 28 Jul 2020, as reported by Gizmodo (28 Jul 2020): 200 stores over eight years, two vendors (FaceFirst, then DeepCam from 2018); Reuters visited 75 stores in Manhattan and central Los Angeles - journalism; observations of stores are treated as observable (O), quotes from staff as anecdote",
+    "Excluded: FTC complaint and stipulated order (2023), the reference for comparison layer B (Section 6.2)",
+    "Cut-off set by the AI rater: 31 Jul 2020, after the Reuters report and before the FTC action"
+  ],
+  "plan": {
+    "source": "ALTAI Plan Codebook (generic), Apitchaka Singjai, 2026-11-11",
+    "stakeholderCodes": "draft by Claude from codebook paraphrases; to be verified against the full ALTAI wording (rule R1)"
+  },
+  "summary": {
+    "inScope": 58,
+    "plansRegistered": 58,
+    "notApplicable": 4,
+    "toRate": 54,
+    "rated": 54,
+    "notYetRated": 0,
+    "met": 0,
+    "partlyMet": 0,
+    "notMet": 0,
+    "cannotJudge": 54,
+    "coverageR": 0.0,
+    "coverageDefinition": "(Met + Partly met + Not met) / applicable criteria for this stakeholder",
+    "c1RatedBeforeRegistration": []
+  },
+  "requirements": {
+    "toProvider": [
+      {
+        "id": "A-13",
+        "missing": "Evidence for the registered measure: Valid certificate for the deployed version."
+      },
+      {
+        "id": "A-18",
+        "missing": "Evidence for the registered measure: Risk metrics defined for this use, with levels."
+      },
+      {
+        "id": "A-19",
+        "missing": "Evidence for the registered measure: Hazards and misuse identified for this use."
+      },
+      {
+        "id": "A-20",
+        "missing": "Evidence for the registered measure: Reliability needed by this decision, stated."
+      },
+      {
+        "id": "A-23",
+        "missing": "False match rate at the operating threshold for each vendor's system, on Rite Aid's enrolment images."
+      },
+      {
+        "id": "A-36",
+        "missing": "Evidence for the registered measure: Each GDPR-type measure in place (DPIA, DPO, minimisation, rights)."
+      },
+      {
+        "id": "A-37",
+        "missing": "Evidence for the registered measure: Effects of non-personal data for this use."
+      },
+      {
+        "id": "A-38",
+        "missing": "Evidence for the registered measure: Data-management standards followed."
+      },
+      {
+        "id": "A-41",
+        "missing": "Evidence for the registered measure: Survey of AI users' understanding, with results."
+      },
+      {
+        "id": "A-44",
+        "missing": "Evidence for the registered measure: Bias-prevention procedure in use."
+      },
+      {
+        "id": "A-46",
+        "missing": "Evidence for the registered measure: Provider staff trained on bias."
+      },
+      {
+        "id": "A-51",
+        "missing": "Evidence for the registered measure: Universal Design applied, by record."
+      },
+      {
+        "id": "A-53",
+        "missing": "Evidence for the registered measure: Stakeholders who took part in design."
+      },
+      {
+        "id": "A-63",
+        "missing": "Evidence for the registered measure: Access the provider offers to an independent auditor."
+      },
+      {
+        "id": "A-64",
+        "missing": "Evidence for the registered measure: Third-party oversight in operation."
+      },
+      {
+        "id": "A-65",
+        "missing": "Evidence for the registered measure: Risk training given, including legal framework."
+      },
+      {
+        "id": "A-66",
+        "missing": "Evidence for the registered measure: Ethics board and its decisions on this system."
+      },
+      {
+        "id": "A-67",
+        "missing": "Evidence for the registered measure: Monitoring of trustworthiness and documented trade-offs."
+      }
+    ],
+    "toCustomer": [
+      {
+        "id": "A-01",
+        "missing": "Evidence for the registered measure: What users and subjects are shown about the output's AI origin."
+      },
+      {
+        "id": "A-03",
+        "missing": "Evidence for the registered measure: Share of outputs accepted without review, and overrides."
+      },
+      {
+        "id": "A-04",
+        "missing": "Evidence for the registered measure: Decisions that changed because of the system."
+      },
+      {
+        "id": "A-07",
+        "missing": "Store procedure for acting on a match, and records of how employees acted."
+      },
+      {
+        "id": "A-08",
+        "missing": "Evidence for the registered measure: AI users trained before use, with content and date."
+      },
+      {
+        "id": "A-09",
+        "missing": "Evidence for the registered measure: Adverse effects detected and handled in a period."
+      },
+      {
+        "id": "A-10",
+        "missing": "Evidence for the registered measure: Outputs can be stopped or switched off in practice."
+      },
+      {
+        "id": "A-11",
+        "missing": "Evidence for the registered measure: Controls on learning or autonomous action in operation."
+      },
+      {
+        "id": "A-12",
+        "missing": "Evidence for the registered measure: Damaging failures, attacks or misuse in a period."
+      },
+      {
+        "id": "A-14",
+        "missing": "Evidence for the registered measure: Attacks tested against the deployed system."
+      },
+      {
+        "id": "A-15",
+        "missing": "Evidence for the registered measure: Security measures working in operation."
+      },
+      {
+        "id": "A-16",
+        "missing": "Evidence for the registered measure: Red-team or penetration test of the deployment."
+      },
+      {
+        "id": "A-17",
+        "missing": "Evidence for the registered measure: Support and update terms users receive."
+      },
+      {
+        "id": "A-21",
+        "missing": "Evidence for the registered measure: Fallback that takes over when the system fails."
+      },
+      {
+        "id": "A-22",
+        "missing": "Evidence for the registered measure: Changes that triggered a new review, in a period."
+      },
+      {
+        "id": "A-24",
+        "missing": "Evidence for the registered measure: Match between training population and the customer's population."
+      },
+      {
+        "id": "A-25",
+        "missing": "Evidence for the registered measure: Accuracy tracked in operation over a period."
+      },
+      {
+        "id": "A-26",
+        "missing": "Evidence for the registered measure: Drift or feedback effects in inputs and outcomes over time."
+      },
+      {
+        "id": "A-27",
+        "missing": "Evidence for the registered measure: Accuracy information users receive."
+      },
+      {
+        "id": "A-28",
+        "missing": "Evidence for the registered measure: Error rates by site, period or condition."
+      },
+      {
+        "id": "A-29",
+        "missing": "Evidence for the registered measure: Logs and validation records available for the deployment."
+      },
+      {
+        "id": "A-30",
+        "missing": "Evidence for the registered measure: Fallback plan tested, with results."
+      },
+      {
+        "id": "A-31",
+        "missing": "Evidence for the registered measure: Low-confidence outputs flagged and handled."
+      },
+      {
+        "id": "A-32",
+        "missing": "Evidence for the registered measure: Whether the deployed system learns online."
+      },
+      {
+        "id": "A-39",
+        "missing": "Evidence for the registered measure: Each traceability measure available for the deployment."
+      },
+      {
+        "id": "A-40",
+        "missing": "Evidence for the registered measure: Explanations users receive with outputs."
+      },
+      {
+        "id": "A-43",
+        "missing": "Evidence for the registered measure: Purpose, limits, error rates and training users receive."
+      },
+      {
+        "id": "A-49",
+        "missing": "Evidence for the registered measure: Groups excluded by the design."
+      },
+      {
+        "id": "A-50",
+        "missing": "Evidence for the registered measure: Accessibility of what users receive."
+      },
+      {
+        "id": "A-56",
+        "missing": "Evidence for the registered measure: Changes in work arrangements after introduction."
+      },
+      {
+        "id": "A-57",
+        "missing": "Evidence for the registered measure: Workers and representatives informed before use."
+      },
+      {
+        "id": "A-58",
+        "missing": "Evidence for the registered measure: AI users' understanding of capabilities and limits."
+      },
+      {
+        "id": "A-59",
+        "missing": "Evidence for the registered measure: Skills lost or retained among AI users."
+      },
+      {
+        "id": "A-60",
+        "missing": "Evidence for the registered measure: Re- and up-skilling offered and taken up."
+      },
+      {
+        "id": "A-62",
+        "missing": "Evidence for the registered measure: Audit trail available for the deployment."
+      },
+      {
+        "id": "A-68",
+        "missing": "Evidence for the registered measure: Channel for third-party reports and its use."
+      }
+    ],
+    "unassigned": []
+  },
+  "ratings": [
+    {
+      "id": "A-01",
+      "requirement": "R1 Human agency and oversight",
+      "criterion": "Users can tell an outcome comes from an algorithm",
+      "stakeholderCode": "CS",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: What users and subjects are shown about the output's AI origin",
+        "measureChoice": "A",
+        "measureRationale": "What people actually receive is what they act on or contest. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "consequence",
+        "acceptanceCriterion": "What users and subjects are shown about the output's AI origin: every store employee receiving match alerts receives it.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "C"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: What users and subjects are shown about the output's AI origin.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-02",
+      "requirement": "R1 Human agency and oversight",
+      "criterion": "Users told they interact with AI, not a human",
+      "stakeholderCode": "CS",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": false,
+        "notApplicableReason": "Shoppers do not interact with the system; employees receive match alerts. No interactive or conversational interface is reported.",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": "Not applicable",
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-03",
+      "requirement": "R1 Human agency and oversight",
+      "criterion": "Over-reliance by users prevented",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Share of outputs accepted without review, and overrides",
+        "measureChoice": "A",
+        "measureRationale": "How often the risk occurs in this use speaks to the decision more directly than an assessment document. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "consequence",
+        "acceptanceCriterion": "Share of outputs accepted without review, and overrides, known for this use and no more frequent than the level the retailer's own risk assessment accepts.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Share of outputs accepted without review, and overrides.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-04",
+      "requirement": "R1 Human agency and oversight",
+      "criterion": "No unintended interference with decision-making",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Decisions that changed because of the system",
+        "measureChoice": "A",
+        "measureRationale": "How often the risk occurs in this use speaks to the decision more directly than an assessment document. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "consequence",
+        "acceptanceCriterion": "Decisions that changed because of the system, known for this use and no more frequent than the level the retailer's own risk assessment accepts.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Decisions that changed because of the system.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-05",
+      "requirement": "R1 Human agency and oversight",
+      "criterion": "System simulates social interaction",
+      "stakeholderCode": "CS",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": false,
+        "notApplicableReason": "No social or conversational interaction is reported.",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": "Not applicable",
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-06",
+      "requirement": "R1 Human agency and oversight",
+      "criterion": "Attachment, addiction or manipulation avoided",
+      "stakeholderCode": "CS",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": false,
+        "notApplicableReason": "No user-facing interaction in which attachment or manipulation could arise is reported.",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": "Not applicable",
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-07",
+      "requirement": "R1 Human agency and oversight",
+      "criterion": "Oversight mode (self-learning, in/on the loop, in command)",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Oversight mode as deployed (in, on the loop, in command)",
+        "measureChoice": "A",
+        "measureRationale": "Who acts on a match decides whether a false match harms a shopper.",
+        "acceptanceCriterionSource": "consequence",
+        "acceptanceCriterion": "An employee decides on every action after a match (human in the loop), shown by store procedure or observation.",
+        "evidenceClasses": [
+          "O",
+          "C"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "Rite Aid said the system relied on human review (statement reported by Reuters, via Gizmodo).",
+      "argument": "A spokesperson's statement is not the observation or procedure the plan registered (option A), so no element is shown (G4).",
+      "missing": "Store procedure for acting on a match, and records of how employees acted.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-08",
+      "requirement": "R1 Human agency and oversight",
+      "criterion": "Overseers specifically trained",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: AI users trained before use, with content and date",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "AI users trained before use, with content and date, shown for the stores using the system up to the cut-off.",
+        "evidenceClasses": [
+          "D",
+          "C"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: AI users trained before use, with content and date.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-09",
+      "requirement": "R1 Human agency and oversight",
+      "criterion": "Adverse effects detected and responded to",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Adverse effects detected and handled in a period",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Adverse effects detected and handled in a period, shown for the stores using the system up to the cut-off.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Adverse effects detected and handled in a period.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-10",
+      "requirement": "R1 Human agency and oversight",
+      "criterion": "Safe way to stop or abort",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Outputs can be stopped or switched off in practice",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Outputs can be stopped or switched off in practice, shown for the stores using the system up to the cut-off.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "C"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Outputs can be stopped or switched off in practice.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-11",
+      "requirement": "R1 Human agency and oversight",
+      "criterion": "Oversight fits self-learning or autonomy",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Controls on learning or autonomous action in operation",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Controls on learning or autonomous action in operation, shown for the stores using the system up to the cut-off.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Controls on learning or autonomous action in operation.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-12",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Faults, attacks or misuse could cause damage",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Damaging failures, attacks or misuse in a period",
+        "measureChoice": "A",
+        "measureRationale": "How often the risk occurs in this use speaks to the decision more directly than an assessment document. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "consequence",
+        "acceptanceCriterion": "Damaging failures, attacks or misuse in a period, known for this use and no more frequent than the level the retailer's own risk assessment accepts.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Damaging failures, attacks or misuse in a period.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-13",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Security certification or standard",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Valid certificate for the deployed version",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Valid certificate for the deployed version, shown for the stores using the system up to the cut-off.",
+        "evidenceClasses": [
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Valid certificate for the deployed version.",
+      "missingHeldBy": "provider"
+    },
+    {
+      "id": "A-14",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Exposure to attacks assessed (poisoning, evasion, inversion)",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Attacks tested against the deployed system",
+        "measureChoice": "A",
+        "measureRationale": "How often the risk occurs in this use speaks to the decision more directly than an assessment document. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "consequence",
+        "acceptanceCriterion": "Attacks tested against the deployed system, known for this use and no more frequent than the level the retailer's own risk assessment accepts.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Attacks tested against the deployed system.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-15",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Integrity and security protected over the lifecycle",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Security measures working in operation",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Security measures working in operation, shown for the stores using the system up to the cut-off.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Security measures working in operation.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-16",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Red-teamed or penetration-tested",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Red-team or penetration test of the deployment",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Red-team or penetration test of the deployment, shown for the stores using the system up to the cut-off.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Red-team or penetration test of the deployment.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-17",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Users told how long security updates last",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Support and update terms users receive",
+        "measureChoice": "A",
+        "measureRationale": "What people actually receive is what they act on or contest. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "consequence",
+        "acceptanceCriterion": "Support and update terms users receive: every store employee receiving match alerts receives it.",
+        "evidenceClasses": [
+          "D",
+          "C"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Support and update terms users receive.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-18",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Risks, metrics and levels defined per use case",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Risk metrics defined for this use, with levels",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Risk metrics defined for this use, with levels, shown for the stores using the system up to the cut-off.",
+        "evidenceClasses": [
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Risk metrics defined for this use, with levels.",
+      "missingHeldBy": "provider"
+    },
+    {
+      "id": "A-19",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Threats, consequences and misuse identified; criticality levels",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Hazards and misuse identified for this use",
+        "measureChoice": "A",
+        "measureRationale": "How often the risk occurs in this use speaks to the decision more directly than an assessment document. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "consequence",
+        "acceptanceCriterion": "Hazards and misuse identified for this use, known for this use and no more frequent than the level the retailer's own risk assessment accepts.",
+        "evidenceClasses": [
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Hazards and misuse identified for this use.",
+      "missingHeldBy": "provider"
+    },
+    {
+      "id": "A-20",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Critical decisions' dependence on reliability assessed",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Reliability needed by this decision, stated",
+        "measureChoice": "A",
+        "measureRationale": "How often the risk occurs in this use speaks to the decision more directly than an assessment document. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "consequence",
+        "acceptanceCriterion": "Reliability needed by this decision, stated, known for this use and no more frequent than the level the retailer's own risk assessment accepts.",
+        "evidenceClasses": [
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Reliability needed by this decision, stated.",
+      "missingHeldBy": "provider"
+    },
+    {
+      "id": "A-21",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Fault tolerance planned",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Fallback that takes over when the system fails",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Fallback that takes over when the system fails, shown for the stores using the system up to the cut-off.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Fallback that takes over when the system fails.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-22",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Changes trigger a new robustness and safety review",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Changes that triggered a new review, in a period",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Changes that triggered a new review, in a period, shown for the stores using the system up to the cut-off.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Changes that triggered a new review, in a period.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-23",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Low accuracy could cause damage",
+      "stakeholderCode": "CS",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Sensitivity and false-alert rate at the operating threshold",
+        "measureChoice": "A",
+        "measureRationale": "A false match leads to a shopper being approached or asked to leave, so error rates at the threshold in use are the measure.",
+        "acceptanceCriterionSource": "consequence",
+        "acceptanceCriterion": "False match rate at the operating threshold of at most 1 in 1,000 searches, measured on the enrolment images in use (level set by the AI rater from the consequence; no source before the cut-off was found).",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "Former staff told Reuters FaceFirst \"had high error rates and spat out hundreds of hits when prompted with fuzzy photos\" (via Gizmodo).",
+      "argument": "Staff accounts are anecdote, not a measurement at the operating threshold, so no element is shown (G4).",
+      "missing": "False match rate at the operating threshold for each vendor's system, on Rite Aid's enrolment images.",
+      "missingHeldBy": "provider"
+    },
+    {
+      "id": "A-24",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Data current, complete and representative of deployment",
+      "stakeholderCode": "CS",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Match between training population and the customer's population",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Match between training population and the customer's population, shown for the stores using the system up to the cut-off.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Match between training population and the customer's population.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-25",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Accuracy monitored and documented",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Accuracy tracked in operation over a period",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Accuracy tracked in operation over a period, shown for the stores using the system up to the cut-off.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Accuracy tracked in operation over a period.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-26",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Operation could invalidate training data or assumptions",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Drift or feedback effects in inputs and outcomes over time",
+        "measureChoice": "A",
+        "measureRationale": "How often the risk occurs in this use speaks to the decision more directly than an assessment document. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "consequence",
+        "acceptanceCriterion": "Drift or feedback effects in inputs and outcomes over time, known for this use and no more frequent than the level the retailer's own risk assessment accepts.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Drift or feedback effects in inputs and outcomes over time.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-27",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Expected accuracy communicated to users and subjects",
+      "stakeholderCode": "CS",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Accuracy information users receive",
+        "measureChoice": "A",
+        "measureRationale": "What people actually receive is what they act on or contest. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "consequence",
+        "acceptanceCriterion": "Accuracy information users receive: every store employee receiving match alerts receives it.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "C"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Accuracy information users receive.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-28",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Low reliability or reproducibility could cause damage; contexts tested",
+      "stakeholderCode": "CS",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Error rates by site, period or condition",
+        "measureChoice": "A",
+        "measureRationale": "Error rates at the operating threshold reflect the cost of each error type for this decision. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "consequence",
+        "acceptanceCriterion": "Error rates by site, period or condition, no worse than current practice for this decision.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Error rates by site, period or condition.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-29",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Verification, validation and logging in place",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Logs and validation records available for the deployment",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Logs and validation records available for the deployment, shown for the stores using the system up to the cut-off.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Logs and validation records available for the deployment.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-30",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Tested fallback plans",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Fallback plan tested, with results",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Fallback plan tested, with results, shown for the stores using the system up to the cut-off.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Fallback plan tested, with results.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-31",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Low-confidence results handled",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Low-confidence outputs flagged and handled",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Low-confidence outputs flagged and handled, shown for the stores using the system up to the cut-off.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "C"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Low-confidence outputs flagged and handled.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-32",
+      "requirement": "R2 Technical robustness and safety",
+      "criterion": "Online continual learning; gaming the objective considered",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Whether the deployed system learns online",
+        "measureChoice": "A",
+        "measureRationale": "The property as deployed is what the decision depends on. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "consequence",
+        "acceptanceCriterion": "Whether the deployed system learns online, documented or observed, and consistent with the oversight the decision needs.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Whether the deployed system learns online.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-36",
+      "requirement": "R3 Privacy and data governance",
+      "criterion": "GDPR-type measures (DPIA, DPO, minimisation, rights, by design)",
+      "stakeholderCode": "CS",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Each GDPR-type measure in place (DPIA, DPO, minimisation, rights)",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Each GDPR-type measure in place (DPIA, DPO, minimisation, rights), shown for the stores using the system up to the cut-off.",
+        "evidenceClasses": [
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Each GDPR-type measure in place (DPIA, DPO, minimisation, rights).",
+      "missingHeldBy": "provider"
+    },
+    {
+      "id": "A-37",
+      "requirement": "R3 Privacy and data governance",
+      "criterion": "Implications of non-personal data considered",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Effects of non-personal data for this use",
+        "measureChoice": "A",
+        "measureRationale": "How often the risk occurs in this use speaks to the decision more directly than an assessment document. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "consequence",
+        "acceptanceCriterion": "Effects of non-personal data for this use, known for this use and no more frequent than the level the retailer's own risk assessment accepts.",
+        "evidenceClasses": [
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Effects of non-personal data for this use.",
+      "missingHeldBy": "provider"
+    },
+    {
+      "id": "A-38",
+      "requirement": "R3 Privacy and data governance",
+      "criterion": "Aligned with data-management standards",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Data-management standards followed",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Data-management standards followed, shown for the stores using the system up to the cut-off.",
+        "evidenceClasses": [
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Data-management standards followed.",
+      "missingHeldBy": "provider"
+    },
+    {
+      "id": "A-39",
+      "requirement": "R4 Transparency",
+      "criterion": "Traceability: input and output quality, data and model per decision, logging",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Each traceability measure available for the deployment",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Each traceability measure available for the deployment, shown for the stores using the system up to the cut-off.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Each traceability measure available for the deployment.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-40",
+      "requirement": "R4 Transparency",
+      "criterion": "Decisions explained to users",
+      "stakeholderCode": "CS",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Explanations users receive with outputs",
+        "measureChoice": "A",
+        "measureRationale": "What people actually receive is what they act on or contest. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "consequence",
+        "acceptanceCriterion": "Explanations users receive with outputs: every store employee receiving match alerts receives it.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Explanations users receive with outputs.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-41",
+      "requirement": "R4 Transparency",
+      "criterion": "Users surveyed on understanding",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Survey of AI users' understanding, with results",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Survey of AI users' understanding, with results, shown for the stores using the system up to the cut-off.",
+        "evidenceClasses": [
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Survey of AI users' understanding, with results.",
+      "missingHeldBy": "provider"
+    },
+    {
+      "id": "A-42",
+      "requirement": "R4 Transparency",
+      "criterion": "Chatbot users told it is AI",
+      "stakeholderCode": "CS",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": false,
+        "notApplicableReason": "Not a chatbot.",
+        "measure": "",
+        "measureChoice": "",
+        "measureRationale": "",
+        "acceptanceCriterionSource": "",
+        "acceptanceCriterion": "",
+        "evidenceClasses": [],
+        "amendments": []
+      },
+      "rating": "Not applicable",
+      "ratedAt": null,
+      "evidence": "",
+      "argument": "",
+      "missing": "",
+      "missingHeldBy": ""
+    },
+    {
+      "id": "A-43",
+      "requirement": "R4 Transparency",
+      "criterion": "Users told purpose, limits, error rates; training material",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Purpose, limits, error rates and training users receive",
+        "measureChoice": "A",
+        "measureRationale": "What people actually receive is what they act on or contest. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "consequence",
+        "acceptanceCriterion": "Purpose, limits, error rates and training users receive: every store employee receiving match alerts receives it.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "C"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Purpose, limits, error rates and training users receive.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-44",
+      "requirement": "R5 Diversity, non-discrimination and fairness",
+      "criterion": "Strategy to avoid unfair bias in data and design",
+      "stakeholderCode": "Ci",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Bias-prevention procedure in use",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Bias-prevention procedure in use, shown for the stores using the system up to the cut-off.",
+        "evidenceClasses": [
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Bias-prevention procedure in use.",
+      "missingHeldBy": "provider"
+    },
+    {
+      "id": "A-46",
+      "requirement": "R5 Diversity, non-discrimination and fairness",
+      "criterion": "Bias awareness for designers and developers",
+      "stakeholderCode": "Ci",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Provider staff trained on bias",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Provider staff trained on bias, shown for the stores using the system up to the cut-off.",
+        "evidenceClasses": [
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Provider staff trained on bias.",
+      "missingHeldBy": "provider"
+    },
+    {
+      "id": "A-49",
+      "requirement": "R5 Diversity, non-discrimination and fairness",
+      "criterion": "Fits the variety of preferences and abilities",
+      "stakeholderCode": "CS",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Groups excluded by the design",
+        "measureChoice": "A",
+        "measureRationale": "How often the risk occurs in this use speaks to the decision more directly than an assessment document. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "consequence",
+        "acceptanceCriterion": "Groups excluded by the design, known for this use and no more frequent than the level the retailer's own risk assessment accepts.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Groups excluded by the design.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-50",
+      "requirement": "R5 Diversity, non-discrimination and fairness",
+      "criterion": "Interface usable with disabilities and assistive technology",
+      "stakeholderCode": "CS",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Accessibility of what users receive",
+        "measureChoice": "A",
+        "measureRationale": "What people actually receive is what they act on or contest. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "consequence",
+        "acceptanceCriterion": "Accessibility of what users receive: every store employee receiving match alerts receives it.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Accessibility of what users receive.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-51",
+      "requirement": "R5 Diversity, non-discrimination and fairness",
+      "criterion": "Universal Design principles applied",
+      "stakeholderCode": "Ci",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Universal Design applied, by record",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Universal Design applied, by record, shown for the stores using the system up to the cut-off.",
+        "evidenceClasses": [
+          "D",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Universal Design applied, by record.",
+      "missingHeldBy": "provider"
+    },
+    {
+      "id": "A-53",
+      "requirement": "R5 Diversity, non-discrimination and fairness",
+      "criterion": "Wide stakeholder participation in design",
+      "stakeholderCode": "Ci",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Stakeholders who took part in design",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Stakeholders who took part in design, shown for the stores using the system up to the cut-off.",
+        "evidenceClasses": [
+          "D",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Stakeholders who took part in design.",
+      "missingHeldBy": "provider"
+    },
+    {
+      "id": "A-56",
+      "requirement": "R6 Societal and environmental well-being",
+      "criterion": "Impact on human work",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Changes in work arrangements after introduction",
+        "measureChoice": "A",
+        "measureRationale": "How often the risk occurs in this use speaks to the decision more directly than an assessment document. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "consequence",
+        "acceptanceCriterion": "Changes in work arrangements after introduction, known for this use and no more frequent than the level the retailer's own risk assessment accepts.",
+        "evidenceClasses": [
+          "O",
+          "C"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Changes in work arrangements after introduction.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-57",
+      "requirement": "R6 Societal and environmental well-being",
+      "criterion": "Workers and representatives informed and consulted",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Workers and representatives informed before use",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Workers and representatives informed before use, shown for the stores using the system up to the cut-off.",
+        "evidenceClasses": [
+          "C"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Workers and representatives informed before use.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-58",
+      "requirement": "R6 Societal and environmental well-being",
+      "criterion": "Impacts on work understood; workers know capabilities",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: AI users' understanding of capabilities and limits",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "AI users' understanding of capabilities and limits, shown for the stores using the system up to the cut-off.",
+        "evidenceClasses": [
+          "D",
+          "C"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: AI users' understanding of capabilities and limits.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-59",
+      "requirement": "R6 Societal and environmental well-being",
+      "criterion": "De-skilling risk countered",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Skills lost or retained among AI users",
+        "measureChoice": "A",
+        "measureRationale": "How often the risk occurs in this use speaks to the decision more directly than an assessment document. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "consequence",
+        "acceptanceCriterion": "Skills lost or retained among AI users, known for this use and no more frequent than the level the retailer's own risk assessment accepts.",
+        "evidenceClasses": [
+          "C"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Skills lost or retained among AI users.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-60",
+      "requirement": "R6 Societal and environmental well-being",
+      "criterion": "New skills supported by training",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Re- and up-skilling offered and taken up",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Re- and up-skilling offered and taken up, shown for the stores using the system up to the cut-off.",
+        "evidenceClasses": [
+          "D",
+          "C"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Re- and up-skilling offered and taken up.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-62",
+      "requirement": "R7 Accountability",
+      "criterion": "Auditability: development traceability, data sourcing, logging",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Audit trail available for the deployment",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Audit trail available for the deployment, shown for the stores using the system up to the cut-off.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Audit trail available for the deployment.",
+      "missingHeldBy": "customer"
+    },
+    {
+      "id": "A-63",
+      "requirement": "R7 Accountability",
+      "criterion": "Auditable by independent third parties",
+      "stakeholderCode": "C",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Access the provider offers to an independent auditor",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Access the provider offers to an independent auditor, shown for the stores using the system up to the cut-off.",
+        "evidenceClasses": [
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Access the provider offers to an independent auditor.",
+      "missingHeldBy": "provider"
+    },
+    {
+      "id": "A-64",
+      "requirement": "R7 Accountability",
+      "criterion": "External guidance or third-party auditing beyond development",
+      "stakeholderCode": "Ci",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Third-party oversight in operation",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Third-party oversight in operation, shown for the stores using the system up to the cut-off.",
+        "evidenceClasses": [
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Third-party oversight in operation.",
+      "missingHeldBy": "provider"
+    },
+    {
+      "id": "A-65",
+      "requirement": "R7 Accountability",
+      "criterion": "Risk training including legal framework",
+      "stakeholderCode": "Ci",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Risk training given, including legal framework",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Risk training given, including legal framework, shown for the stores using the system up to the cut-off.",
+        "evidenceClasses": [
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Risk training given, including legal framework.",
+      "missingHeldBy": "provider"
+    },
+    {
+      "id": "A-66",
+      "requirement": "R7 Accountability",
+      "criterion": "AI ethics review board or similar",
+      "stakeholderCode": "Ci",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Ethics board and its decisions on this system",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Ethics board and its decisions on this system, shown for the stores using the system up to the cut-off.",
+        "evidenceClasses": [
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Ethics board and its decisions on this system.",
+      "missingHeldBy": "provider"
+    },
+    {
+      "id": "A-67",
+      "requirement": "R7 Accountability",
+      "criterion": "ALTAI adherence monitored; trade-offs documented",
+      "stakeholderCode": "Ci",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Monitoring of trustworthiness and documented trade-offs",
+        "measureChoice": "A",
+        "measureRationale": "Records of the process operating show more than a document that describes it. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "practice",
+        "acceptanceCriterion": "Monitoring of trustworthiness and documented trade-offs, shown for the stores using the system up to the cut-off.",
+        "evidenceClasses": [
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Monitoring of trustworthiness and documented trade-offs.",
+      "missingHeldBy": "provider"
+    },
+    {
+      "id": "A-68",
+      "requirement": "R7 Accountability",
+      "criterion": "Third parties can report vulnerabilities, risks or biases",
+      "stakeholderCode": "CS",
+      "plan": {
+        "registeredAt": "2026-11-11T19:00:00Z",
+        "applies": true,
+        "notApplicableReason": "",
+        "measure": "A: Channel for third-party reports and its use",
+        "measureChoice": "A",
+        "measureRationale": "What people actually receive is what they act on or contest. (Generic plan text applied by the AI rater.)",
+        "acceptanceCriterionSource": "consequence",
+        "acceptanceCriterion": "Channel for third-party reports and its use: every store employee receiving match alerts receives it.",
+        "evidenceClasses": [
+          "O",
+          "D",
+          "C",
+          "N"
+        ],
+        "amendments": []
+      },
+      "rating": "Cannot judge",
+      "ratedAt": "2026-11-11T19:30:00Z",
+      "evidence": "No evidence about the deployed system found in: Reuters 2020 special report (via Gizmodo).",
+      "argument": "No expected element is shown, so G4 gives Cannot judge. Holder set by rule: customer if element 4 lists an observable source, or customer records with no provider-only source; otherwise provider.",
+      "missing": "Evidence for the registered measure: Channel for third-party reports and its use.",
+      "missingHeldBy": "customer"
+    }
+  ],
+  "notRatedForThisStakeholder": [
+    {
+      "id": "A-33",
+      "stakeholderCode": "S"
+    },
+    {
+      "id": "A-34",
+      "stakeholderCode": "S"
+    },
+    {
+      "id": "A-35",
+      "stakeholderCode": "S"
+    },
+    {
+      "id": "A-45",
+      "stakeholderCode": "S"
+    },
+    {
+      "id": "A-47",
+      "stakeholderCode": "S"
+    },
+    {
+      "id": "A-48",
+      "stakeholderCode": "S"
+    },
+    {
+      "id": "A-52",
+      "stakeholderCode": "S"
+    },
+    {
+      "id": "A-54",
+      "stakeholderCode": "X"
+    },
+    {
+      "id": "A-55",
+      "stakeholderCode": "X"
+    },
+    {
+      "id": "A-61",
+      "stakeholderCode": "X"
+    },
+    {
+      "id": "A-69",
+      "stakeholderCode": "S"
+    }
+  ],
+  "note": "Ratings were assigned by an AI rater, not a human assessor, following rules G1-G5. Plans are generic where marked. The tool records them and shows the G4 rule."
+}
