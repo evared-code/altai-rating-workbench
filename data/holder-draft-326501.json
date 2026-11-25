@@ -1,0 +1,725 @@
+{
+ "source": "Holder draft for the 326501 grading case (Claude, 2026-11-25); to be checked by the second coder",
+ "items": [
+  {
+   "id": "A-01",
+   "q1": "yes",
+   "q2": "no",
+   "holder": "app",
+   "classes": [
+    "O"
+   ],
+   "note": "Yes: proposes grades that affect students"
+  },
+  {
+   "id": "A-02",
+   "q1": "yes",
+   "q2": "no",
+   "holder": "app",
+   "classes": [
+    "C"
+   ],
+   "note": "Are students told grades are AI-proposed?"
+  },
+  {
+   "id": "A-03",
+   "q1": "yes",
+   "q2": "no",
+   "holder": "app",
+   "classes": [
+    "C"
+   ],
+   "note": "Approve-without-change rate in app logs"
+  },
+  {
+   "id": "A-04",
+   "q1": "yes",
+   "q2": "no",
+   "holder": "app",
+   "classes": [
+    "C"
+   ],
+   "note": "Does showing the AI level anchor the lecturer?"
+  },
+  {
+   "id": "A-05",
+   "q1": "yes",
+   "q2": "no",
+   "holder": "app",
+   "classes": [
+    "O"
+   ],
+   "note": "No chat; likely N/A"
+  },
+  {
+   "id": "A-06",
+   "q1": "yes",
+   "q2": "no",
+   "holder": "app",
+   "classes": [
+    "O"
+   ],
+   "note": "Likely N/A"
+  },
+  {
+   "id": "A-07",
+   "q1": "yes",
+   "q2": "no",
+   "holder": "app",
+   "classes": [
+    "C"
+   ],
+   "note": "Human-in-the-loop: lecturer approves each criterion"
+  },
+  {
+   "id": "A-08",
+   "q1": "yes",
+   "q2": "no",
+   "holder": "app",
+   "classes": [
+    "C"
+   ],
+   "note": "Briefing for doctor-lecturers and TAs"
+  },
+  {
+   "id": "A-09",
+   "q1": "no",
+   "q2": "no",
+   "holder": "shared",
+   "classes": [
+    "C",
+    "N"
+   ],
+   "note": "App monitors use; producer explains model failures"
+  },
+  {
+   "id": "A-10",
+   "q1": "yes",
+   "q2": "no",
+   "holder": "app",
+   "classes": [
+    "C"
+   ],
+   "note": "Switch AI off, grade manually"
+  },
+  {
+   "id": "A-11",
+   "q1": "no",
+   "q2": "no",
+   "holder": "shared",
+   "classes": [
+    "D",
+    "C"
+   ],
+   "note": "Producer: does it learn? App: controls"
+  },
+  {
+   "id": "A-12",
+   "q1": "yes",
+   "q2": "no",
+   "holder": "app",
+   "classes": [
+    "O"
+   ],
+   "note": "Consequence of a wrong grade in this course"
+  },
+  {
+   "id": "A-13",
+   "q1": "yes",
+   "q2": "yes",
+   "holder": "each",
+   "classes": [
+    "C",
+    "D"
+   ],
+   "note": "App hosting vs model service"
+  },
+  {
+   "id": "A-14",
+   "q1": "yes",
+   "q2": "yes",
+   "holder": "each",
+   "classes": [
+    "C",
+    "D"
+   ],
+   "note": "On-prem, not sent outside university"
+  },
+  {
+   "id": "A-15",
+   "q1": "yes",
+   "q2": "yes",
+   "holder": "each",
+   "classes": [
+    "C",
+    "N"
+   ],
+   "note": ""
+  },
+  {
+   "id": "A-16",
+   "q1": "yes",
+   "q2": "yes",
+   "holder": "each",
+   "classes": [
+    "C",
+    "N"
+   ],
+   "note": ""
+  },
+  {
+   "id": "A-17",
+   "q1": "no",
+   "q2": "no",
+   "holder": "shared",
+   "classes": [
+    "D",
+    "C"
+   ],
+   "note": "Producer support period; app tells users"
+  },
+  {
+   "id": "A-18",
+   "q1": "yes",
+   "q2": "no",
+   "holder": "app",
+   "classes": [
+    "C"
+   ],
+   "note": "Acceptance criterion: error costs w(e)"
+  },
+  {
+   "id": "A-19",
+   "q1": "no",
+   "q2": "no",
+   "holder": "shared",
+   "classes": [
+    "C",
+    "N"
+   ],
+   "note": ""
+  },
+  {
+   "id": "A-20",
+   "q1": "yes",
+   "q2": "no",
+   "holder": "app",
+   "classes": [
+    "O"
+   ],
+   "note": ""
+  },
+  {
+   "id": "A-21",
+   "q1": "yes",
+   "q2": "no",
+   "holder": "app",
+   "classes": [
+    "C"
+   ],
+   "note": "Fallback: lecturer grades by hand"
+  },
+  {
+   "id": "A-22",
+   "q1": "no",
+   "q2": "no",
+   "holder": "shared",
+   "classes": [
+    "D",
+    "C"
+   ],
+   "note": "Producer announces versions; app re-assesses (trigger)"
+  },
+  {
+   "id": "A-23",
+   "q1": "yes",
+   "q2": "no",
+   "holder": "app",
+   "classes": [
+    "O"
+   ],
+   "note": "Test on 30 frozen reports vs second lecturer"
+  },
+  {
+   "id": "A-24",
+   "q1": "no",
+   "q2": "yes",
+   "holder": "producer",
+   "classes": [
+    "N"
+   ],
+   "note": "Knowledge map / training data"
+  },
+  {
+   "id": "A-25",
+   "q1": "yes",
+   "q2": "yes",
+   "holder": "each",
+   "classes": [
+    "D",
+    "C"
+   ],
+   "note": "Producer's tests; app's monitoring"
+  },
+  {
+   "id": "A-26",
+   "q1": "no",
+   "q2": "no",
+   "holder": "shared",
+   "classes": [
+    "N",
+    "C"
+   ],
+   "note": "Drift: new cohorts, new case types"
+  },
+  {
+   "id": "A-27",
+   "q1": "no",
+   "q2": "no",
+   "holder": "shared",
+   "classes": [
+    "D",
+    "C"
+   ],
+   "note": "Producer's claim + app's own measured accuracy"
+  },
+  {
+   "id": "A-28",
+   "q1": "yes",
+   "q2": "no",
+   "holder": "app",
+   "classes": [
+    "O"
+   ],
+   "note": "Same report, same level?"
+  },
+  {
+   "id": "A-29",
+   "q1": "yes",
+   "q2": "yes",
+   "holder": "each",
+   "classes": [
+    "D",
+    "C"
+   ],
+   "note": ""
+  },
+  {
+   "id": "A-30",
+   "q1": "yes",
+   "q2": "no",
+   "holder": "app",
+   "classes": [
+    "C"
+   ],
+   "note": ""
+  },
+  {
+   "id": "A-31",
+   "q1": "no",
+   "q2": "no",
+   "holder": "shared",
+   "classes": [
+    "D",
+    "C"
+   ],
+   "note": "Model must expose confidence; app routes to lecturer"
+  },
+  {
+   "id": "A-32",
+   "q1": "no",
+   "q2": "yes",
+   "holder": "producer",
+   "classes": [
+    "D"
+   ],
+   "note": ""
+  },
+  {
+   "id": "A-33",
+   "q1": "yes",
+   "q2": "no",
+   "holder": "app",
+   "classes": [
+    "C"
+   ],
+   "note": "Patient data in reports, student identity"
+  },
+  {
+   "id": "A-34",
+   "q1": "yes",
+   "q2": "no",
+   "holder": "app",
+   "classes": [
+    "C"
+   ],
+   "note": ""
+  },
+  {
+   "id": "A-35",
+   "q1": "no",
+   "q2": "yes",
+   "holder": "producer",
+   "classes": [
+    "N"
+   ],
+   "note": ""
+  },
+  {
+   "id": "A-36",
+   "q1": "yes",
+   "q2": "yes",
+   "holder": "each",
+   "classes": [
+    "C",
+    "N"
+   ],
+   "note": "PDPA here; de-identify names and HN"
+  },
+  {
+   "id": "A-37",
+   "q1": "no",
+   "q2": "yes",
+   "holder": "producer",
+   "classes": [
+    "N"
+   ],
+   "note": ""
+  },
+  {
+   "id": "A-38",
+   "q1": "yes",
+   "q2": "yes",
+   "holder": "each",
+   "classes": [
+    "C",
+    "D"
+   ],
+   "note": ""
+  },
+  {
+   "id": "A-39",
+   "q1": "yes",
+   "q2": "yes",
+   "holder": "each",
+   "classes": [
+    "C",
+    "D"
+   ],
+   "note": "Model version stored with each grade"
+  },
+  {
+   "id": "A-40",
+   "q1": "no",
+   "q2": "no",
+   "holder": "shared",
+   "classes": [
+    "D",
+    "O"
+   ],
+   "note": "Model gives findings; app shows them"
+  },
+  {
+   "id": "A-41",
+   "q1": "yes",
+   "q2": "no",
+   "holder": "app",
+   "classes": [
+    "C"
+   ],
+   "note": ""
+  },
+  {
+   "id": "A-42",
+   "q1": "yes",
+   "q2": "no",
+   "holder": "app",
+   "classes": [
+    "O"
+   ],
+   "note": ""
+  },
+  {
+   "id": "A-43",
+   "q1": "no",
+   "q2": "no",
+   "holder": "shared",
+   "classes": [
+    "D",
+    "C"
+   ],
+   "note": "Limits from producer; app tells lecturers and students"
+  },
+  {
+   "id": "A-44",
+   "q1": "no",
+   "q2": "no",
+   "holder": "shared",
+   "classes": [
+    "N",
+    "O"
+   ],
+   "note": "Training (producer) + test by handwriting quality (app)"
+  },
+  {
+   "id": "A-45",
+   "q1": "no",
+   "q2": "no",
+   "holder": "shared",
+   "classes": [
+    "N",
+    "C"
+   ],
+   "note": "Training data vs 40 reports since 2018"
+  },
+  {
+   "id": "A-46",
+   "q1": "no",
+   "q2": "yes",
+   "holder": "producer",
+   "classes": [
+    "D"
+   ],
+   "note": ""
+  },
+  {
+   "id": "A-47",
+   "q1": "yes",
+   "q2": "no",
+   "holder": "app",
+   "classes": [
+    "C"
+   ],
+   "note": "Student appeal, lecturer flag"
+  },
+  {
+   "id": "A-48",
+   "q1": "yes",
+   "q2": "no",
+   "holder": "app",
+   "classes": [
+    "C"
+   ],
+   "note": "Defined for this use: same quality, same level"
+  },
+  {
+   "id": "A-49",
+   "q1": "yes",
+   "q2": "no",
+   "holder": "app",
+   "classes": [
+    "O"
+   ],
+   "note": ""
+  },
+  {
+   "id": "A-50",
+   "q1": "yes",
+   "q2": "no",
+   "holder": "app",
+   "classes": [
+    "O"
+   ],
+   "note": ""
+  },
+  {
+   "id": "A-51",
+   "q1": "yes",
+   "q2": "yes",
+   "holder": "each",
+   "classes": [
+    "C",
+    "D"
+   ],
+   "note": ""
+  },
+  {
+   "id": "A-52",
+   "q1": "yes",
+   "q2": "no",
+   "holder": "app",
+   "classes": [
+    "C"
+   ],
+   "note": ""
+  },
+  {
+   "id": "A-53",
+   "q1": "yes",
+   "q2": "yes",
+   "holder": "each",
+   "classes": [
+    "C",
+    "D"
+   ],
+   "note": ""
+  },
+  {
+   "id": "A-54",
+   "q1": "no",
+   "q2": "no",
+   "holder": "shared",
+   "classes": [
+    "N",
+    "C"
+   ],
+   "note": "Training energy vs running cost"
+  },
+  {
+   "id": "A-55",
+   "q1": "yes",
+   "q2": "yes",
+   "holder": "each",
+   "classes": [
+    "C",
+    "N"
+   ],
+   "note": ""
+  },
+  {
+   "id": "A-56",
+   "q1": "yes",
+   "q2": "no",
+   "holder": "app",
+   "classes": [
+    "C"
+   ],
+   "note": "Lecturer grading workload"
+  },
+  {
+   "id": "A-57",
+   "q1": "yes",
+   "q2": "no",
+   "holder": "app",
+   "classes": [
+    "C"
+   ],
+   "note": ""
+  },
+  {
+   "id": "A-58",
+   "q1": "yes",
+   "q2": "no",
+   "holder": "app",
+   "classes": [
+    "C"
+   ],
+   "note": ""
+  },
+  {
+   "id": "A-59",
+   "q1": "yes",
+   "q2": "no",
+   "holder": "app",
+   "classes": [
+    "C"
+   ],
+   "note": "Lecturers and TAs lose grading skill?"
+  },
+  {
+   "id": "A-60",
+   "q1": "yes",
+   "q2": "no",
+   "holder": "app",
+   "classes": [
+    "C"
+   ],
+   "note": ""
+  },
+  {
+   "id": "A-61",
+   "q1": "yes",
+   "q2": "no",
+   "holder": "app",
+   "classes": [
+    "O"
+   ],
+   "note": "Likely low"
+  },
+  {
+   "id": "A-62",
+   "q1": "yes",
+   "q2": "yes",
+   "holder": "each",
+   "classes": [
+    "C",
+    "N"
+   ],
+   "note": ""
+  },
+  {
+   "id": "A-63",
+   "q1": "no",
+   "q2": "no",
+   "holder": "shared",
+   "classes": [
+    "N",
+    "C"
+   ],
+   "note": "Needs producer to grant access"
+  },
+  {
+   "id": "A-64",
+   "q1": "yes",
+   "q2": "yes",
+   "holder": "each",
+   "classes": [
+    "C",
+    "D"
+   ],
+   "note": ""
+  },
+  {
+   "id": "A-65",
+   "q1": "yes",
+   "q2": "yes",
+   "holder": "each",
+   "classes": [
+    "C",
+    "D"
+   ],
+   "note": ""
+  },
+  {
+   "id": "A-66",
+   "q1": "yes",
+   "q2": "no",
+   "holder": "app",
+   "classes": [
+    "C"
+   ],
+   "note": "University ethics committee"
+  },
+  {
+   "id": "A-67",
+   "q1": "yes",
+   "q2": "no",
+   "holder": "app",
+   "classes": [
+    "C"
+   ],
+   "note": "Continuous assessment"
+  },
+  {
+   "id": "A-68",
+   "q1": "yes",
+   "q2": "yes",
+   "holder": "each",
+   "classes": [
+    "C",
+    "D"
+   ],
+   "note": ""
+  },
+  {
+   "id": "A-69",
+   "q1": "yes",
+   "q2": "no",
+   "holder": "app",
+   "classes": [
+    "C"
+   ],
+   "note": "Student grade appeal"
+  }
+ ]
+}

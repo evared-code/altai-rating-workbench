@@ -1,0 +1,75 @@
+<header>
+  <div class="hbar wrap">
+    <div class="brand">
+      <h1>ALTAI Rating Workbench</h1>
+      <p>Register the plan, then rate · 69 ALTAI criteria · one assessment per AI component</p>
+    </div>
+    <div class="field"><label class="label" for="compSel">AI component</label><select id="compSel" class="compsel"></select></div>
+    <div class="field"><span class="label" id="roundLbl">Evidence round</span><div class="roles" role="group" aria-labelledby="roundLbl" id="rounds"></div></div>
+    <div class="actions">
+      <input type="file" id="importFile" accept="application/json,.json" hidden>
+      <button class="btn" id="exBtn" type="button">Load example</button>
+      <button class="btn" id="importBtn" type="button">Import JSON</button>
+      <button class="btn primary" id="outBtn" type="button">Outputs</button>
+    </div>
+  </div>
+  <nav class="tabs wrap" role="tablist" aria-label="View">
+    <button role="tab" data-v="bench" type="button">Rate</button>
+    <button role="tab" data-v="setup" type="button">Case setup</button>
+    <button role="tab" data-v="release" type="button">Release check and outputs<span class="cnt" id="relCnt"></span></button>
+  </nav>
+</header>
+
+<div class="meta wrap">
+  <div class="field"><label class="label" for="caseName">Case (AI app)</label><input id="caseName" placeholder="e.g. 326501 case-report grading"></div>
+  <div class="field"><label class="label" for="assessor">Assessor</label><input id="assessor" placeholder="Name"></div>
+  <div class="field"><label class="label" for="cutoff">Evidence cut-off</label><input id="cutoff" type="date"></div>
+  <span id="exTag" class="ex" hidden></span>
+  <p class="note">The assessor works for the app side and rates each AI component the app uses. Register the plan (elements 1–4) before looking at evidence; rating opens only after registration, and every rating is the assessor's own.</p>
+</div>
+
+<main class="bench wrap" id="vBench">
+  <aside class="panel ledger" aria-label="Criteria">
+    <div class="tally">
+      <div class="nums" style="grid-template-columns:repeat(4,1fr)">
+        <div class="num"><b id="nTotal">69</b><span>to rate</span></div>
+        <div class="num"><b id="nPlan">0</b><span>registered</span></div>
+        <div class="num"><b id="nDone">0</b><span>rated</span></div>
+        <div class="num"><b id="nLeft">69</b><span>left</span></div>
+      </div>
+      <div class="bar" id="bar" aria-hidden="true"></div>
+      <div class="legend" id="legend"></div>
+    </div>
+    <div class="filter" role="group" aria-label="Show">
+      <button class="chipbtn" data-f="all" aria-pressed="true" type="button">All</button>
+      <button class="chipbtn" data-f="noplan" aria-pressed="false" type="button">Plan needed</button>
+      <button class="chipbtn" data-f="open" aria-pressed="false" type="button">Not rated</button>
+      <button class="chipbtn" data-f="done" aria-pressed="false" type="button">Rated</button>
+      <button class="chipbtn" data-f="ask" aria-pressed="false" type="button">Ask producer</button>
+    </div>
+    <div class="list" id="list"></div>
+  </aside>
+
+  <section class="panel plan" id="plan" aria-live="polite"></section>
+
+  <aside class="rate" aria-label="Rating">
+    <div class="panel big" id="ratePanel"></div>
+    <div class="panel rule">
+      <h3>Rating rule <span class="mono">G1–G5</span></h3>
+      <ol>
+        <li><b>G1</b><span>Applicability is decided in element 1 of the registered plan. A criterion registered as not applicable gets no rating.</span></li>
+        <li><b>G2</b><span>List the expected elements: each measure, and each subgroup the acceptance criterion names.</span></li>
+        <li><b>G3</b><span>Compare each element with the registered acceptance criterion, using only evidence about this component as the app uses it (its version, setting and population). Mark it shown met, shown not met, or missing.</span></li>
+        <li><b>G4</b><span>Any element shown not met → <b style="color:var(--notmet)">Not met</b>. None shown → <b style="color:var(--cannot)">Cannot judge</b>. All shown met → <b style="color:var(--met)">Met</b>. Otherwise → <b style="color:var(--partly)">Partly met</b>.</span></li>
+        <li><b>G5</b><span>Record claim, evidence and argument. Not met becomes <b>Fix before release</b>. Missing evidence becomes <b>Ask producer</b> (class N, counts in ΔR) or an <b>Own task</b> on the app side (classes O and C).</span></li>
+      </ol>
+      <div class="g4" id="g4"></div>
+    </div>
+  </aside>
+</main>
+
+<section class="page wrap" id="vSetup" hidden></section>
+<section class="page wrap" id="vRelease" hidden></section>
+
+<div id="dlg" hidden></div>
+<div id="toast" class="toast" hidden></div>

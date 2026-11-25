@@ -1,0 +1,49 @@
+/* v2: views, component picker, setup and release pages */
+.tabs{max-width:1520px;margin:0 auto;display:flex;gap:4px;padding-top:2px}
+.tabs button{border:0;border-bottom:2.5px solid transparent;background:transparent;padding:8px 14px;cursor:pointer;font-size:14px;font-weight:500;color:var(--muted)}
+.tabs button[aria-selected="true"]{color:var(--accent);border-bottom-color:var(--accent);font-weight:600}
+.tabs .cnt{font-family:var(--f-mono);font-size:11.5px;margin-left:6px;padding:1px 6px;border-radius:999px;background:var(--sunk)}
+.tabs .cnt.bad{background:var(--notmet-bg);color:var(--notmet)}
+.tabs .cnt.ok{background:var(--met-bg);color:var(--met)}
+.compsel{border:1px solid var(--line);border-radius:8px;padding:6px 9px;font-size:13.5px;background:var(--surface);max-width:280px}
+.page{max-width:1520px;margin:0 auto;padding-block:0 40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,560px),1fr));gap:16px;align-items:start}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px 20px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.card.wide{grid-column:1/-1}
+.card h2{font-family:var(--f-display);font-size:20px;font-weight:600}
+.card h2 small{font-family:var(--f-body);font-size:12.5px;color:var(--muted);font-weight:400;margin-left:8px}
+.card p{margin:0;font-size:13.5px}
+table.t{border-collapse:collapse;width:100%;font-size:13.5px}
+table.t th{text-align:left;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600;padding:6px 8px;border-bottom:1px solid var(--line)}
+table.t td{padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+table.t input,table.t select{width:100%;border:1px solid var(--line);border-radius:6px;padding:5px 7px;font-size:13.5px;background:var(--surface)}
+table.t input.num{width:88px;text-align:right;font-family:var(--f-mono)}
+table.t td.n{font-family:var(--f-mono);text-align:right;white-space:nowrap}
+.scroll{overflow-x:auto}
+.check{display:grid;grid-template-columns:28px minmax(0,1fr);gap:8px;align-items:start;padding:10px 12px;border-radius:8px;border:1px solid var(--line)}
+.check .m{font-family:var(--f-mono);font-weight:700;font-size:15px;text-align:center}
+.check.ok{background:var(--met-bg);border-color:var(--met)} .check.ok .m{color:var(--met)}
+.check.no{background:var(--notmet-bg);border-color:var(--notmet)} .check.no .m{color:var(--notmet)}
+.check.open{background:var(--cannot-bg);border-color:var(--cannot)} .check.open .m{color:var(--cannot)}
+.check b{font-weight:600}
+.check .d{font-size:12.5px;color:var(--muted);margin-top:2px}
+.verdict{border-radius:10px;padding:12px 14px;font-weight:600;font-size:15px}
+.verdict.ok{background:var(--met-bg);color:var(--met);border:1.5px solid var(--met)}
+.verdict.no{background:var(--notmet-bg);color:var(--notmet);border:1.5px solid var(--notmet)}
+.verdict.open{background:var(--cannot-bg);color:var(--cannot);border:1.5px solid var(--cannot)}
+.ineq{font-family:var(--f-mono);font-size:13.5px;background:var(--sunk);border-radius:8px;padding:10px 12px}
+.hold{display:inline-flex;align-items:center;gap:6px;border-radius:6px;padding:2px 9px;font-size:12.5px;font-weight:600;border:1px solid var(--accent);color:var(--accent);background:var(--accent-soft)}
+.act{display:inline-block;border-radius:999px;padding:1px 8px;font-size:11.5px;font-weight:600;border:1px solid var(--line);background:var(--sunk);color:var(--ink)}
+.act.ask{border-color:var(--cannot);color:var(--cannot);background:var(--cannot-bg)}
+.act.own{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
+.act.fix{border-color:var(--notmet);color:var(--notmet);background:var(--notmet-bg)}
+.reopen{font-size:12.5px;border:1px solid var(--partly);background:var(--partly-bg);color:var(--ink);border-radius:8px;padding:8px 10px}
+.row .pl.ro{color:var(--partly);font-weight:600}
+.outs{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
+.out{border:1px solid var(--line);border-radius:10px;padding:12px 14px;display:flex;flex-direction:column;gap:8px;background:var(--sunk)}
+.out b{font-size:14.5px}
+.out span{font-size:12.5px;color:var(--muted)}
+.out .row2{display:flex;gap:6px;flex-wrap:wrap;margin-top:auto}
+.split{display:flex;height:10px;border-radius:5px;overflow:hidden;background:var(--sunk)}
+.split i{display:block;height:100%}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.btn:disabled:hover{border-color:var(--line);color:inherit}
